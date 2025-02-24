@@ -1,0 +1,156 @@
+.recommend {
+  background-color: white;
+  padding-bottom: 10px;
+}
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.grids {
+  display: grid;
+
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+.product1 {
+  position: relative;
+  display: inline-block;
+  border: 2px solid rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+.badge1 {
+  position: absolute;
+  border: 1 thin;
+  top: 10px;
+  left: 3px;
+  color: white;
+  padding: 5px;
+  background-color: rgb(253, 109, 56);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: blue;
+  padding: 3px 3px;
+  border-radius: 50%;
+  background-color: lightblue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.compare {
+  position: absolute;
+  top: 105px;
+  right: 10px;
+}
+
+.share {
+  position: absolute;
+  top: 130px;
+  right: 10px;
+  color: blue;
+}
+
+.stock {
+  color: green;
+  font-size: 10px;
+  display: flex;
+  padding: 1px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+.tick {
+  border-radius: 5px;
+  border: 1px solid green;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.part {
+  color: gray;
+}
+
+.price {
+  color: blue;
+}
+.dollars {
+  font-size: 24px;
+}
+
+.cut {
+  text-decoration: line-through;
+  color: orange;
+}
+
+.quantity {
+  display: flex;
+}
+.btn {
+  font-size: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid rgb(97, 94, 94);
+  border-radius: 5px;
+  margin: 2px;
+}
+.select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  font-size: 20px;
+  padding: 20px;
+  padding-left: 30px;
+  background-color: white;
+  border: 1px solid rgb(97, 94, 94);
+  border-radius: 5px;
+  margin: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.icon {
+  margin-left: 50px;
+  position: absolute;
+
+  right: 8px;
+  pointer-events: none; /* Prevent click interference */
+  color: blue; /* Make only the arrow blue */
+}
+
+.addCart {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 200px;
+  width: 100%;
+  border: blue;
+}
+
+.down {
+  position: absolute;
+}
+
+.name {
+  color: black;
+}
+
+.description {
+  color: gray;
+}
