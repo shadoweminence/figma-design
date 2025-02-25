@@ -39,7 +39,7 @@ nav {
   font-size: 24px;
   cursor: pointer;
   margin-left: 20px;
-  color: blue;
+  color: rgba(34, 81, 236, 0.904);
 }
 .badge {
   position: absolute;

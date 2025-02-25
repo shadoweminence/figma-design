@@ -1,0 +1,25 @@
+.dpd {
+  text-align: center;
+  margin: 30px;
+  color: rgb(46, 40, 40);
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2 {
+  text-align: center;
+  margin: 20px;
+  color: black;
+}
+
+.showBtn {
+  margin: 25px;
+  background-color: rgba(34, 81, 236, 0.904);
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  border: rgba(34, 81, 236, 0.904);
+}

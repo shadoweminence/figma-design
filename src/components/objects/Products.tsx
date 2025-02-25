@@ -1,9 +1,9 @@
 import React from "react";
-import product1 from "../assets/productImage1.png";
-import product2 from "../assets/productImage2.png";
+import product1 from "../../assets/productImage1.png";
+import product2 from "../../assets/productImage2.png";
 
-import RecommendedProducts from "./RecommendedProducts";
-import "../css/recommend.css";
+import RecommendedProducts from "../RecommendedProducts";
+import "../../css/recommend.css";
 
 const Products: React.FC = () => {
   const products = [
@@ -15,6 +15,7 @@ const Products: React.FC = () => {
       price: 45.0,
       oldPrice: 55.0,
       description: "Omnires | Part No. 2123532",
+      description1: "Basin width: 45cm, Basin Height: 12 cm, Basin depth:35cm",
     },
     {
       image: product2,
@@ -24,6 +25,7 @@ const Products: React.FC = () => {
       price: 51.0,
       oldPrice: 64.0,
       description: "Omnires | Part No. 2123532",
+      description1: "Basin width: 45cm, Basin Height: 12 cm, Basin depth:35cm",
     },
   ];
 

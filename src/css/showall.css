@@ -1,5 +1,5 @@
 .container {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: right;
   position: relative;
   margin-bottom: 10px;
@@ -9,16 +9,17 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  color: blue;
+  color: rgba(34, 81, 236, 0.904);
   font-size: 16px;
   font-weight: bold;
+  gap: 8px;
 }
 
 .icons {
   border-radius: 6px;
   padding: 5px;
   font-size: 25px;
-  background-color: lightblue;
+  background-color: rgba(34, 81, 236, 0.904);
   position: absolute;
   top: -18px;
   right: 6px;

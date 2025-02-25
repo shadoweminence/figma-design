@@ -15,6 +15,7 @@ interface Product {
   price: number; // New price
   oldPrice: number; // Old price
   description: string; // Description
+  description1: string;
 }
 interface ProductProps {
   product: Product;
@@ -41,6 +42,14 @@ const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
           <div>
             <p className="description">{product.description}</p>
             <h3 className="name">{product.name}</h3>
+
+            <div className="desktop-only">
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: product.description1.replace(/,/g, "<br />"),
+                }}
+              />
+            </div>
 
             <p className="price">
               Your price <span className="dollars">${product.price}</span> net{" "}

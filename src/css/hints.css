@@ -1,0 +1,28 @@
+.hints {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 15px;
+}
+
+.hintDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 18px;
+  color: black;
+}
+.hintName {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.moreHints {
+  margin-top: 5px;
+  display: flex;
+  color: rgba(34, 81, 236, 0.904);
+  gap: 5px;
+}

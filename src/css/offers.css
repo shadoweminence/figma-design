@@ -1,0 +1,35 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 80vw;
+  text-align: center;
+  background-color: rgba(34, 81, 236, 0.904);
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.img {
+  margin-bottom: 10px;
+}
+.discount {
+  margin-bottom: 10px;
+}
+.offerName {
+  margin-bottom: 10px;
+}
+.offerBtn {
+  background-color: white;
+  color: rgba(34, 81, 236, 0.904);
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border: rgba(34, 81, 236, 0.904);
+}
