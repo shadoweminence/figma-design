@@ -1,5 +1,7 @@
 import "./App.css";
 import DPD from "./components/DPD";
+import Dropdown from "./components/Dropdown";
+import Logos from "./components/Logos";
 import Nav from "./components/Nav";
 import Ad from "./components/objects/Ad";
 import Bundle from "./components/objects/Bundle";
@@ -9,7 +11,6 @@ import Hints from "./components/objects/Hints";
 import Offers from "./components/objects/Offers";
 import Products from "./components/objects/Products";
 
-import Rough from "./components/Rough";
 import Search from "./components/Search";
 import ShowAllCategories from "./components/ShowAllCategories";
 import ShowAllEvents from "./components/ShowAllEvents";
@@ -35,10 +36,8 @@ function App() {
       <Events />
       <ShowAllEvents />
       <SignUpForm />
-      <br />
-      <br />
-      <br />
-      <Rough />
+      <Dropdown />
+      <Logos />
     </>
   );
 }

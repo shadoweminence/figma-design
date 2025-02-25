@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  font-size: 40px;
+  margin: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fb {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.insta {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.yt {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+}
