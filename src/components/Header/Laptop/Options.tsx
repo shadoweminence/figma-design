@@ -18,28 +18,30 @@ const Options: React.FC<NavOptionProps> = ({ nav }) => {
   };
   return (
     <div>
-      {nav.options ? (
-        <div>
-          <div className="navDrop" onClick={handleDrop}>
-            <h4 className={isDropped ? "active" : ""}> {nav.title}</h4>
-            {isDropped ? <FaAngleUp /> : <FaAngleDown />}
-          </div>
-
-          {isDropped && (
-            <div>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: nav.options.replace(/,/g, "<br />"),
-                }}
-              />
+      <div className="navTitles">
+        {nav.options ? (
+          <div>
+            <div className="navDrop" onClick={handleDrop}>
+              <h4 className={isDropped ? "active" : ""}> {nav.title}</h4>
+              {isDropped ? <FaAngleUp /> : <FaAngleDown />}
             </div>
-          )}
-        </div>
-      ) : (
-        <div className="navTitles">
-          <div>{nav.title}</div>
-        </div>
-      )}
+
+            {isDropped && (
+              <div>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: nav.options.replace(/,/g, "<br />"),
+                  }}
+                />
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="navTitles">
+            <div>{nav.title}</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
