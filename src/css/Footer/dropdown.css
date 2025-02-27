@@ -39,16 +39,6 @@
     white-space: normal;
   }
 
-  .items ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .items li {
-    white-space: normal;
-    overflow: visible;
-  }
-
   h4 {
     font-size: 18px;
     margin-bottom: 10px;

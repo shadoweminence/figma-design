@@ -1,7 +1,7 @@
 import React from "react";
 
 import { IoSearch } from "react-icons/io5";
-import "../../css/Header/search.css";
+import "../../../css/Header/mobile/search.css";
 
 export default function Search() {
   return (

@@ -245,4 +245,9 @@ h3 {
   .cut {
     font-size: 16px;
   }
+
+  .name {
+    color: black;
+    min-height: 60px;
+  }
 }

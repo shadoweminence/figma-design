@@ -1,0 +1,14 @@
+.navTitles {
+  display: grid;
+  grid-template-columns: repeat(4, 300px); /* 7 columns */
+  gap: 5px; /* space between grid items */
+}
+
+.navDrop {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  margin-top: 2px;
+}

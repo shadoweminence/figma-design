@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import "../../css/Footer/dropdown.css";
 
-const Dropdown = () => {
-  const [isHowToBuyDropped, setIsHowToBuyDropped] = useState(false);
-  const [isHelpDropped, setIsHelpDropped] = useState(false);
-  const [isServicesDropped, setIsServicesDropped] = useState(false);
-  const [isAboutDropped, setIsAboutDropped] = useState(false);
+interface Item {
+  title: string;
+  options: string;
+}
+
+interface ItemProps {
+  item: Item;
+}
+
+const Dropdown: React.FC<ItemProps> = ({ item }) => {
+  const [isDropped, setIsDropped] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isLaptop, setIsLaptop] = useState(window.innerWidth >= 1024);
 
@@ -23,76 +29,25 @@ const Dropdown = () => {
     };
   }, [windowWidth]);
 
-  const handleHowToBuyDrop = () => {
-    setIsHowToBuyDropped(!isHowToBuyDropped);
-  };
-
-  const handleHelpDrop = () => {
-    setIsHelpDropped(!isHelpDropped);
-  };
-
-  const handleServicesDrop = () => {
-    setIsServicesDropped(!isServicesDropped);
-  };
-
-  const handleAboutDrop = () => {
-    setIsAboutDropped(!isAboutDropped);
+  const handleDrop = () => {
+    setIsDropped(!isDropped);
   };
 
   return (
     <>
       {isLaptop ? (
-        <div className="lapDrops">
+        <div>
           <div className="drops">
-            <h4>How to buy</h4>
+            <h4>{item.title}</h4>
             <div className="items">
               <ul>
-                <li>Payment methods</li>
-                <li>Order and pick up</li>
-                <li>Order with delivery</li>
-                <li>Shopping over the phone</li>
-                <li>Returns</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="drops">
-            <h4>Help</h4>
-            <div className="items">
-              <ul>
-                <li>Contact</li>
-                <li>Online Help</li>
-                <li>Our Commitments</li>
-                <li>Give feedback</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="drops">
-            <h4>Services</h4>
-            <div className="items">
-              <ul>
-                <li>Transport</li>
-                <li>Design service</li>
-                <li>Paint an plaster mixing sevice</li>
-                <li>Dimensioning and assembly service</li>
-                <li>Return of used equipment</li>
-                <li>Additional services</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="drops">
-            <h4>About</h4>
-            <div className="items">
-              <ul>
-                <li>About Us</li>
-                <li>Press Office</li>
-                <li>For suppliers</li>
-                <li>Regulations</li>
-                <li>Privacy Policy</li>
-                <li>Cookies</li>
-                <li>Personal Data Request</li>
+                <li>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: item.options.replace(/,/g, "<br />"),
+                    }}
+                  />
+                </li>
               </ul>
             </div>
           </div>
@@ -100,77 +55,22 @@ const Dropdown = () => {
       ) : (
         <div className="dropdown">
           <div className="sameBorder">
-            <div className="drop" onClick={handleHowToBuyDrop}>
-              <h4 className={isHowToBuyDropped ? "active" : ""}> How to buy</h4>
-              {isHowToBuyDropped ? <FaAngleUp /> : <FaAngleDown />}
+            <div className="drop" onClick={handleDrop}>
+              <h4 className={isDropped ? "active" : ""}> {item.title}</h4>
+              {isDropped ? <FaAngleUp /> : <FaAngleDown />}
             </div>
 
-            {isHowToBuyDropped && (
+            {isDropped && (
               <div className="items">
                 <ul>
-                  <li>Payment methods</li>
-                  <li>Order and pick up</li>
-                  <li>Order with delivery</li>
-                  <li>Shopping over the phone</li>
-                  <li>Returns</li>
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <div className="sameBorder">
-            <div className="drop" onClick={handleHelpDrop}>
-              <h4 className={isHelpDropped ? "active" : ""}>Help</h4>
-              {isHelpDropped ? <FaAngleUp /> : <FaAngleDown />}
-            </div>
-            {isHelpDropped && (
-              <div className="items">
-                <ul>
-                  <li>Contact</li>
-                  <li>Online Help</li>
-                  <li>Our Commitments</li>
-                  <li>Give feedback</li>
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <div className="sameBorder">
-            <div className="drop" onClick={handleServicesDrop}>
-              <h4 className={isServicesDropped ? "active" : ""}>Services</h4>
-              {isServicesDropped ? <FaAngleUp /> : <FaAngleDown />}
-            </div>
-
-            {isServicesDropped && (
-              <div className="items">
-                <ul>
-                  <li>Transport</li>
-                  <li>Design service</li>
-                  <li>Paint an plaster mixing sevice</li>
-                  <li>Dimensioning and assembly service</li>
-                  <li>Return of used equipment</li>
-                  <li>Additional services</li>
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <div className="sameBorder">
-            <div className="drop" onClick={handleAboutDrop}>
-              <h4 className={isAboutDropped ? "active" : ""}>About</h4>
-              {isAboutDropped ? <FaAngleUp /> : <FaAngleDown />}
-            </div>
-
-            {isAboutDropped && (
-              <div className="items">
-                <ul>
-                  <li>About Us</li>
-                  <li>Press Office</li>
-                  <li>For suppliers</li>
-                  <li>Regulations</li>
-                  <li>Privacy Policy</li>
-                  <li>Cookies</li>
-                  <li>Personal Data Request</li>
+                  <li>
+                    {" "}
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: item.options.replace(/,/g, "<br />"),
+                      }}
+                    />
+                  </li>
                 </ul>
               </div>
             )}

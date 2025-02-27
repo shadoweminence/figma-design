@@ -1,8 +1,8 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import "../../css/Header/nav.css";
-import companyLogo from "../../assets/logotype.png";
+import "../../../css/Header/mobile/nav.css";
+import companyLogo from "../../../assets/logotype.png";
 
 function Navbar() {
   return (

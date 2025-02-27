@@ -1,23 +1,37 @@
-import React from "react";
-import Navbar from "./Nav";
-import Search from "./Search";
-import "../../css/Header/header.css";
+import React, { useEffect, useState } from "react";
+
+import Mobile from "./Mobile/Mobile";
+
+import Laptop from "./Laptop/Laptop";
 
 const Header = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isLaptop, setIsLaptop] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      const width = window.innerWidth;
+      setWindowWidth(width);
+      setIsLaptop(width >= 1024);
+    };
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowWidth]);
   return (
-    <div>
-      <div className="topFirstRow">
+    <>
+      {isLaptop ? (
         <div>
-          <Navbar />
+          <Laptop />
         </div>
+      ) : (
         <div>
-          <Search />
+          <Mobile />
         </div>
-        <div className="quickOrderButton">
-          <button>Quick Order Form</button>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

@@ -53,8 +53,7 @@ const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
 
             <p className="price">
               Your price <span className="dollars">${product.price}</span> net{" "}
-              <br />
-              <span className="cut">${product.oldPrice} not</span>
+              <span className="cut">${product.oldPrice} net</span>
             </p>
           </div>
           <div className="quantity">

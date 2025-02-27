@@ -1,8 +1,9 @@
 import React from "react";
 import SignUpForm from "./SignUpForm";
-import Dropdown from "./Dropdown";
+
 import Logos from "./Logos";
 import "../../css/Footer/footer.css";
+import DropdownItems from "./DropdownItems";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div className="drop">
-          <Dropdown />
+          <DropdownItems />
         </div>
       </div>
 
