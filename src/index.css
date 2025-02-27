@@ -2,3 +2,12 @@ body {
   background-color: rgb(255, 251, 251);
   line-height: 1.5;
 }
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: rgb(255, 251, 251);
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

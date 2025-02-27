@@ -23,16 +23,47 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.adImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 
-.adImg img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  object-fit: contain; /* Ensures the image scales properly */
+@media screen and (min-width: 1025px) {
+  .ad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    align-items: center;
+    width: 100%;
+
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .adName {
+    background-color: rgb(255, 123, 0);
+    height: 100%;
+    width: 308px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .adImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .adImg img {
+    width: 100%;
+    max-width: 306px;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales properly */
+  }
 }

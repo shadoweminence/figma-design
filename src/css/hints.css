@@ -26,3 +26,26 @@
   color: rgba(34, 81, 236, 0.904);
   gap: 5px;
 }
+
+@media screen and (min-width: 1025px) {
+  .hints {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 15px;
+    gap: 4px;
+  }
+
+  .hintImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hintImg img {
+    width: 20vw;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales properly */
+  }
+}

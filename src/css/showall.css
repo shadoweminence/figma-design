@@ -22,5 +22,35 @@
   background-color: rgba(34, 81, 236, 0.904);
   position: absolute;
   top: -18px;
-  right: 6px;
+  right: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    text-align: right;
+    position: relative;
+    width: 100%;
+    max-width: 20vw;
+    margin-top: 10vh;
+  }
+
+  .recommend {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: rgba(34, 81, 236, 0.904);
+    font-size: 16px;
+    font-weight: bold;
+    gap: 8px;
+  }
+
+  .icons {
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgba(34, 81, 236, 0.904);
+    position: absolute;
+    top: 30vh;
+    right: 10px;
+  }
 }

@@ -33,3 +33,61 @@
   font-weight: bold;
   border: rgba(34, 81, 236, 0.904);
 }
+
+@media screen and (min-width: 1025px) {
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Aligns items in a row */
+    height: 40vh;
+    width: 88vw;
+    text-align: left;
+    background-color: rgba(34, 81, 236, 0.904);
+
+    padding: 30px 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    gap: 20px;
+
+    position: relative;
+  }
+
+  .offerImg img {
+    width: 10vw;
+    max-width: 300px;
+    height: auto;
+    margin-left: 10px;
+    padding-left: 50px;
+  }
+
+  .discount,
+  .offerName,
+  .offerBtn {
+    flex-shrink: 0; /* Prevents items from shrinking */
+  }
+
+  .discount {
+    position: absolute;
+    left: 300px;
+    font-size: 90px;
+  }
+  .offerName {
+    position: absolute;
+    left: 530px;
+    font-size: 50px;
+  }
+
+  .offerBtn {
+    background-color: white;
+    color: rgba(34, 81, 236, 0.904);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    position: absolute;
+    right: 100px;
+    font-size: 20px;
+    top: 100px;
+  }
+}

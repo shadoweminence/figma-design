@@ -1,43 +1,31 @@
 import "./App.css";
 import DPD from "./components/DPD";
-import Dropdown from "./components/Dropdown";
-import Logos from "./components/Logos";
-import Nav from "./components/Nav";
-import Ad from "./components/objects/Ad";
-import Bundle from "./components/objects/Bundle";
-import Categories from "./components/objects/Categories";
-import Events from "./components/objects/Events";
-import Hints from "./components/objects/Hints";
-import Offers from "./components/objects/Offers";
-import Products from "./components/objects/Products";
 
-import Search from "./components/Search";
-import ShowAllCategories from "./components/ShowAllCategories";
-import ShowAllEvents from "./components/ShowAllEvents";
-import ShowAllHints from "./components/ShowAllHints";
-import ShowAll from "./components/ShowAllProducts";
-import SignUpForm from "./components/SignUpForm";
+import Ad from "./components/Ads/Ad";
+import Bundle from "./components/Bundle/Bundle";
+
+import Offers from "./components/Offer/Offers";
+import Product from "./components/Products/Product";
+
+import Footer from "./components/Footer/Footer";
+import Category from "./components/Categories/Category";
+import HintMain from "./components/Hints/HintMain";
+import EventMain from "./components/Events/EventMain";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Search />
-      <Products />
-      <ShowAll />
+      <Header />
+      <Product />
       <Offers />
-      <Categories />
-      <ShowAllCategories />
-      <Hints />
-      <ShowAllHints />
+      <Category />
+      <HintMain />
       <Bundle />
       <Ad />
       <DPD />
-      <Events />
-      <ShowAllEvents />
-      <SignUpForm />
-      <Dropdown />
-      <Logos />
+      <EventMain />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,10 @@
+@media screen and (min-width: 1025px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

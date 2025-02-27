@@ -34,3 +34,41 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+@media screen and (min-width: 1025px) {
+  .bundles {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bundleImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bundleImg img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales properly */
+  }
+
+  .bundleDetails {
+    background-color: rgba(34, 81, 236, 0.904);
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    width: 600px;
+  }
+
+  .bundleDescription1 {
+    margin-bottom: 20px;
+  }
+}
