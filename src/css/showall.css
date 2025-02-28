@@ -1,8 +1,8 @@
 .container {
-  margin-top: 20px;
+  margin-top: 1.2rem;
   text-align: right;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .recommend {
@@ -10,19 +10,19 @@
   text-align: center;
   justify-content: center;
   color: rgba(34, 81, 236, 0.904);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .icons {
-  border-radius: 6px;
-  padding: 5px;
-  font-size: 25px;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  font-size: 1.4rem;
   background-color: rgba(34, 81, 236, 0.904);
   position: absolute;
-  top: -18px;
-  right: 10px;
+  top: -1.1rem;
+  right: 0.6rem;
 }
 
 @media screen and (min-width: 1025px) {
@@ -39,18 +39,18 @@
     text-align: left;
     justify-content: left;
     color: rgba(34, 81, 236, 0.904);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   .icons {
-    border-radius: 6px;
-    padding: 5px;
-    font-size: 25px;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 1.4rem;
     background-color: rgba(34, 81, 236, 0.904);
     position: absolute;
     top: 30vh;
-    right: 10px;
+    right: 0.6rem;
   }
 }

@@ -14,7 +14,7 @@ function Navbar() {
       </div>
 
       {/* Centered logo */}
-      <div className="logo">
+      <div className="mobNavLogo">
         <img src={companyLogo} alt="logo" />
       </div>
 

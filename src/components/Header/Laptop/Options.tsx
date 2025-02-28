@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../../css/Header/laptop/options.css";
+import "../../../css/Header/laptop/nav.css";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 interface NavOption {

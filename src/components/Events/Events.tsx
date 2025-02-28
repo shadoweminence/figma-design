@@ -4,9 +4,10 @@ import event2 from "../../assets/event2.png";
 import event3 from "../../assets/event3.png";
 import event4 from "../../assets/event4.png";
 
-import "../../css/hints.css";
+import "../../css/flex.css";
 
 import Event from "./Event";
+import ShowAllEvents from "./ShowAllEvents";
 
 const Events: React.FC = () => {
   const events = [
@@ -46,13 +47,16 @@ const Events: React.FC = () => {
 
   return (
     <div>
-      <div>
+      <div className="align">
         <h2>Events for you</h2>
-        <div className="events">
-          {events.map((event, index) => (
-            <Event key={index} event={event} />
-          ))}
+        <div className="showBig">
+          <ShowAllEvents />
         </div>
+      </div>
+      <div className="events">
+        {events.map((event, index) => (
+          <Event key={index} event={event} />
+        ))}
       </div>
     </div>
   );

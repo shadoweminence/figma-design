@@ -2,11 +2,17 @@ import React from "react";
 import Navbar from "./Nav";
 import OptionList from "./OptionList";
 import Icons from "./Icons";
-import "../../../css/Header/laptop/options.css";
+import "../../../css/Header/laptop/nav.css";
+import TopItems from "./TopItems";
+import UserDetails from "./UserDetails";
 
 const Laptop = () => {
   return (
     <div>
+      <div className="bigGridd">
+        <TopItems />
+        <UserDetails />
+      </div>
       <div>
         <Navbar />
       </div>

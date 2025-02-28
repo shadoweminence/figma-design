@@ -6,6 +6,7 @@ import hint4 from "../../assets/hint4.png";
 
 import "../../css/hints.css";
 import Hint from "./Hint";
+import ShowAllHints from "./ShowAllHints";
 
 const Hints: React.FC = () => {
   const hints = [
@@ -42,7 +43,12 @@ const Hints: React.FC = () => {
   return (
     <div>
       <div className="hint">
-        <h2>Hints for you</h2>
+        <div className="align">
+          <h2>Hints for you</h2>
+          <div className="showBig">
+            <ShowAllHints />
+          </div>
+        </div>
         <div className="hints">
           {hints.map((hint, index) => (
             <Hint key={index} hint={hint} />

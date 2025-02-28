@@ -25,7 +25,7 @@ interface ProductProps {
 const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
   return (
     <div className="recommend">
-      <div className="grids">
+      <div className="grids hide-subsequent-rows">
         <div className="product1">
           <img src={product.image} alt={product.alt} />
           <FaRegStar className="star" />
@@ -59,9 +59,7 @@ const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
           <div className="quantity">
             <button className="btn">1</button>
             <div className="select-container">
-              <select className="item" name="item">
-                <option value="item">Item</option>
-              </select>
+              <div className="item">Item</div>
               <FaAngleDown className="icon" />
             </div>
           </div>

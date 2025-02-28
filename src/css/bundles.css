@@ -2,45 +2,59 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-left: 10px;
+  gap: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 .bundleDetails {
+  width: 90vw;
   background-color: rgba(34, 81, 236, 0.904);
-  font-size: 20px;
+  font-size: 1rem;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 h2 {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .bundleDescription1 {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .buyBundle {
   display: flex;
   justify-self: center;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.8rem;
+  border-radius: 1rem;
   color: rgba(34, 81, 236, 0.904);
   border: rgba(34, 81, 236, 0.904);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.bundleImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
 }
 
-@media screen and (min-width: 1025px) {
+.bundleImg img {
+  width: 90vw;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
   .bundles {
-    margin: 10px;
+    margin: 0.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
   }
@@ -49,26 +63,108 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
   }
 
   .bundleImg img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain; /* Ensures the image scales properly */
+    width: 44vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 1rem;
   }
 
   .bundleDetails {
     background-color: rgba(34, 81, 236, 0.904);
-    font-size: 40px;
+    font-size: 1.2rem;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-    height: auto;
-    width: 600px;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+    height: 25vh;
+    width: 43vw;
+    object-fit: cover;
   }
 
+  .bundleDescription {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    display: flex;
+    justify-self: left;
+  }
+
+  .buyBundle {
+    display: flex;
+    justify-self: left;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    color: rgba(34, 81, 236, 0.904);
+    border: rgba(34, 81, 236, 0.904);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    margin-left: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .bundles {
+    margin: 0.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bundleImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .bundleImg img {
+    width: 44vw;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .bundleDetails {
+    background-color: rgba(34, 81, 236, 0.904);
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 40rem;
+    width: 43vw;
+    object-fit: cover;
+  }
+
+  .bundleDescription {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: left;
+    display: flex;
+    justify-self: left;
+  }
   .bundleDescription1 {
-    margin-bottom: 20px;
+    margin-left: 2rem;
+  }
+  .buyBundle {
+    display: flex;
+    justify-self: left;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: rgba(34, 81, 236, 0.904);
+    border: rgba(34, 81, 236, 0.904);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
   }
 }

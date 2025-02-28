@@ -1,17 +1,17 @@
 .sameBorder {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  border-radius: 5px;
-  padding: 10px;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
+  padding: 1rem;
   width: 100%;
 }
 
 .drop {
   display: flex;
   justify-content: space-between;
+  gap: 60vw;
   align-items: center;
-  padding: 10px;
-  font-size: 20px;
+  padding: 0.1rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -29,19 +29,31 @@
   color: rgba(34, 81, 236, 0.904);
 }
 
+@media screen and (min-width: 768px) {
+  .drop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20vw;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .lapDrops {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 90px;
-    margin-left: 190px;
-    font-size: 16px;
+    grid-template-columns: repeat(4, 20vw);
+    gap: 1vw;
+    margin-left: 15rem;
+    font-size: 1rem;
     white-space: normal;
   }
 
   h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     white-space: normal;
   }
 }

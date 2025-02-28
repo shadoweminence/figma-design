@@ -20,8 +20,8 @@ const BuyBundle: React.FC<BundleProps> = ({ bundle }) => {
       </div>
 
       <div className="bundleDetails">
-        <div className="bundleDescription">
-          <h2> {bundle.description}</h2>
+        <div>
+          <h2 className="bundleDescription"> {bundle.description}</h2>
         </div>
         <div className="bundleDescription1">{bundle.description1}</div>
         <div>

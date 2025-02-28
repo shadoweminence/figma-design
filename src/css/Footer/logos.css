@@ -1,77 +1,105 @@
 .social {
   display: flex;
-  font-size: 40px;
-  margin: 20px;
-  gap: 20px;
+  font-size: 2rem;
+  margin: 1rem;
+  gap: 1rem;
   justify-content: center;
+  align-items: center;
+
+  margin-left: 1rem;
 }
 
 .fb {
-  border-radius: 50px;
+  border-radius: 1rem;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 0.2rem;
 }
 .insta {
-  border-radius: 50px;
+  border-radius: 1rem;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 0.3rem;
 }
 .yt {
-  border-radius: 50px;
+  border-radius: 1rem;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+
+  font-size: 1rem;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 1rem;
 }
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   .foot {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
 
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-top: 1px solid grey;
+    border-top: 0.1rem solid grey;
   }
 
   .copyright {
     flex: 1;
     order: 1;
     text-align: left;
-    font-size: 18px;
+    font-size: 1rem;
     color: grey;
-    margin-left: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
+
+    padding: 0.1rem;
+    margin-bottom: 1rem;
   }
 
   .logo1 {
-    margin-left: 20px;
     order: 3;
-    margin-top: 10px;
   }
   .logo1 img {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 1rem;
+    padding: 0.2rem;
   }
   .social {
     order: 2;
-    margin-left: 50vw;
-    padding: 10px;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .foot {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+    border-top: 0.1rem solid grey;
+  }
+
+  .copyright {
+    flex: 1;
+    order: 1;
+    text-align: left;
+    font-size: 1rem;
+    color: grey;
+
+    padding: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo1 {
+    order: 3;
+  }
+  .logo1 img {
+    margin-top: 1rem;
+    padding: 0.2rem;
+  }
+  .social {
+    order: 2;
+    padding: 0.2rem;
   }
 }

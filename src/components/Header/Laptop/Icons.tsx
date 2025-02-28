@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegStar } from "react-icons/fa";
 import compare from "../../../assets/compare.png";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import "../../../css/Header/laptop/options.css";
+import "../../../css/Header/laptop/nav.css";
 
 const Icons = () => {
   return (

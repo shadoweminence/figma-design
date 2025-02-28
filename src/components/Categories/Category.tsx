@@ -8,7 +8,10 @@ const Category = () => {
   return (
     <div className="catFlex">
       <Categories />
-      <ShowAllCategories />
+
+      <div className="showSmall">
+        <ShowAllCategories />
+      </div>
     </div>
   );
 };

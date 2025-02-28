@@ -6,6 +6,7 @@ import solar from "../../assets/solar.png";
 import phone from "../../assets/phone.png";
 import "../../css/Categories/categories.css";
 import RecommendedCategories from "./RecommendedCategories";
+import ShowAllCategories from "./ShowAllCategories";
 
 const Categories: React.FC = () => {
   const categories = [
@@ -33,8 +34,13 @@ const Categories: React.FC = () => {
 
   return (
     <div>
-      <div className="product">
-        <h2>Recommended Categories</h2>
+      <div>
+        <div className="align">
+          <h2>Recommended Categories</h2>
+          <div className="showBig">
+            <ShowAllCategories />
+          </div>
+        </div>
         <div className="grid">
           {categories.map((category, index) => (
             <RecommendedCategories key={index} category={category} />
