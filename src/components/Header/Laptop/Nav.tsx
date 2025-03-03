@@ -13,7 +13,7 @@ function Navbar() {
       </div>
 
       <div className="search-containers">
-        <IoSearch className="search-icon" />
+        <IoSearch className="search-icons" />
         <input type="text" placeholder="Search by product or SKU" />
       </div>
 

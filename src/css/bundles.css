@@ -121,7 +121,7 @@ h2 {
 
   .bundleImg {
     display: flex;
-    margin-left: 4vw;
+
     justify-content: left;
     align-items: left;
   }
@@ -136,7 +136,7 @@ h2 {
 
   .bundleDetails {
     background-color: rgba(34, 81, 236, 0.904);
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -154,7 +154,7 @@ h2 {
     justify-self: left;
   }
   .bundleDescription1 {
-    margin-left: 2rem;
+    margin-left: 3rem;
     font-size: 1rem;
   }
   .buyBundle {
