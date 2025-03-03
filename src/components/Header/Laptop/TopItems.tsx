@@ -21,7 +21,7 @@ const TopItems: React.FC = () => {
   return (
     <div>
       <div>
-        <div className="navTitles">
+        <div className="navTitless">
           {tops.map((top, index) => (
             <Top key={index} top={top} />
           ))}

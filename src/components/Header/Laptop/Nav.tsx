@@ -7,12 +7,12 @@ import "../../../css/Header/laptop/nav.css";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="headNav">
       <div className="logo">
         <img src={companyLogo} alt="logo" />
       </div>
 
-      <div className="search-container">
+      <div className="search-containers">
         <IoSearch className="search-icon" />
         <input type="text" placeholder="Search by product or SKU" />
       </div>

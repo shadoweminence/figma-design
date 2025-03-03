@@ -111,21 +111,23 @@ h2 {
 @media screen and (min-width: 1025px) {
   .bundles {
     display: grid;
-    grid-template-columns: 48vw 49vw;
+    grid-template-columns: 49vw 49vw;
 
     align-items: center;
     justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 8vh;
   }
 
   .bundleImg {
     display: flex;
-    margin-left: 3vw;
+    margin-left: 4vw;
     justify-content: left;
     align-items: left;
   }
 
   .bundleImg img {
-    width: 44vw;
+    width: 49vw;
     height: 45vh;
 
     object-fit: cover;
@@ -139,7 +141,7 @@ h2 {
     padding: 2rem;
     border-radius: 10px;
     height: 45vh;
-    width: 40vw;
+    width: 44vw;
     object-fit: cover;
   }
 

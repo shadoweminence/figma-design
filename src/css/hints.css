@@ -12,7 +12,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
 }
 .hintName {
@@ -67,9 +67,26 @@
   .hints {
     margin-left: 1.8rem;
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
+    grid-template-columns: repeat(4, 21vw);
     margin-bottom: 1rem;
     gap: 2vw;
+  }
+  .hintName {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    min-height: 8vh;
+    margin-bottom: 0.2rem;
+  }
+  .hintDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 1.5rem;
+    color: black;
   }
 
   .hintImg {
@@ -79,8 +96,8 @@
   }
 
   .hintImg img {
-    width: 20vw;
-    max-width: 20vw;
+    width: 21vw;
+    max-width: 21vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
   }

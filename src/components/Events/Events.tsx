@@ -17,7 +17,7 @@ const Events: React.FC = () => {
       name: "Electrician course for electricians with SEP licence",
       dateTime: "23.05.2021 | London, UK",
       description:
-        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online blablabla..",
+        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online blablablabla..",
     },
     {
       image: event2,
@@ -33,7 +33,7 @@ const Events: React.FC = () => {
       name: "AutoCAD 2d basic level",
       dateTime: "15.06.2021 | London, UK",
       description:
-        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online  blablabla...",
+        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online  blablablabla...",
     },
     {
       image: event4,
@@ -41,7 +41,7 @@ const Events: React.FC = () => {
       name: "Paving engineer with a road construction machine licence",
       dateTime: "31.02.2021 | London, UK",
       description:
-        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online  blablabla...",
+        "This course is conducted in the form of lectures via the Internet and ends with an examination, also online  blablablabla...",
     },
   ];
 

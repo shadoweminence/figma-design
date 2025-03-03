@@ -3,7 +3,8 @@ import compare from "../../assets/compare.png";
 import { FaRegStar } from "react-icons/fa";
 import { CiShare2 } from "react-icons/ci";
 import { TiTick } from "react-icons/ti";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaExclamationCircle } from "react-icons/fa";
+
 import "../../css/Products/recommend.css";
 
 // Define the expected props for the component
@@ -16,6 +17,7 @@ interface Product {
   oldPrice: number; // Old price
   description: string; // Description
   description1: string;
+  stock: boolean;
 }
 interface ProductProps {
   product: Product;
@@ -27,12 +29,21 @@ const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
     <div className="recommend">
       <div className="grids hide-subsequent-rows">
         <div className="product1">
-          <img src={product.image} alt={product.alt} />
+          <img className="productImage" src={product.image} alt={product.alt} />
           <FaRegStar className="star" />
           <CiShare2 className="share" />
           <div className="stock">
-            <TiTick className="tick" />
-            <p>In stock</p>
+            {product.stock ? (
+              <>
+                <TiTick className="tick" />
+                <p>In stock</p>
+              </>
+            ) : (
+              <p className="noStock">
+                <FaExclamationCircle />
+                Exp. Delivery on Jun14,2022
+              </p>
+            )}
           </div>
 
           <img src={compare} alt="compare" className="compare" />
@@ -71,6 +82,8 @@ const RecommendedProducts: React.FC<ProductProps> = ({ product }) => {
           </div>
         </div>
       </div>
+
+      <div></div>
     </div>
   );
 };

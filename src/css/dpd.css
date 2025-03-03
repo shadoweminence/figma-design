@@ -86,31 +86,38 @@ h2 {
 @media screen and (min-width: 1025px) {
   .layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40vw 40vw;
+    gap: 10vw;
+    margin-top: 5vw;
+
+    margin-left: -3vw;
+    width: 99vw;
     background-color: rgb(243, 240, 240);
   }
   .dpd {
     text-align: left;
-    margin-top: 1.2rem;
 
-    padding-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 5vw;
+
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+
     color: rgb(46, 40, 40);
-    font-size: 16px;
+    font-size: 2rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .dpdH2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
-    margin: 1.2rem;
+
     color: black;
     margin-bottom: 2rem;
   }
 
   .dpd p {
     margin-left: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .showBtn {
     margin: 1.4rem;

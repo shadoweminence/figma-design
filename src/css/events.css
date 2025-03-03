@@ -87,22 +87,33 @@ h3 {
 @media screen and (min-width: 1025px) {
   h2 {
     display: flex;
-    margin-left: 2.2rem;
-    font-size: 2rem;
+
+    font-size: 3rem;
     margin-top: 4rem;
     text-align: left;
   }
   .events {
-    margin-left: 1.2rem;
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
+    grid-template-columns: repeat(4, 21vw);
     margin-bottom: 1rem;
-    gap: 3vw;
+    gap: 2vw;
   }
   .eventImg {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .eventDescription {
+    margin-right: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 0.5rem;
   }
 
   .eventImg img {
@@ -110,5 +121,9 @@ h3 {
 
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
+  }
+  h3 {
+    font-size: 1.7rem;
+    min-height: 8vh;
   }
 }

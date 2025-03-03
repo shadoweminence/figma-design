@@ -69,7 +69,7 @@
 @media screen and (min-width: 1025px) {
   .ad {
     display: grid;
-    grid-template-columns: repeat(3, 28vw);
+    grid-template-columns: repeat(3, 30vw);
 
     align-items: center;
     width: 85vw;
@@ -109,9 +109,8 @@
   }
 
   .adImg img {
-    width: 100%;
-    max-width: 15vw;
-    height: auto;
-    object-fit: contain; /* Ensures the image scales properly */
+    width: 15vw;
+    height: 40vh;
+    object-fit: cover; /* Ensures the image scales properly */
   }
 }

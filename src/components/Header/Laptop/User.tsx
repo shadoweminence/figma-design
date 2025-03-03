@@ -32,7 +32,7 @@ const User: React.FC<UserProps> = ({ user }) => {
       <div>
         <p className="components">
           <MdMailOutline className="messages" />
-          Messages
+          <span className="msg"> Messages</span>
         </p>
         <span className="messageValue">45</span>
       </div>
