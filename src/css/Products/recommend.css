@@ -10,8 +10,8 @@ h2 {
 .grids {
   display: grid;
 
-  grid-template-columns: repeat(auto-fill, minmax(162px, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr));
+  gap: 5vw;
   overflow: hidden;
 }
 .hide-subsequent-rows {

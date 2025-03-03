@@ -39,7 +39,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 0.5rem;
 }
 
 .bundleImg img {
@@ -68,18 +67,18 @@ h2 {
 
   .bundleImg img {
     width: 44vw;
-    height: 25vh;
+    height: 40vh;
     object-fit: cover;
     border-radius: 1rem;
   }
 
   .bundleDetails {
     background-color: rgba(34, 81, 236, 0.904);
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     padding: 0.2rem;
     border-radius: 0.7rem;
-    height: 25vh;
+    height: 40vh;
     width: 43vw;
     object-fit: cover;
   }
@@ -87,6 +86,7 @@ h2 {
   .bundleDescription {
     color: white;
     margin-bottom: 1rem;
+    margin-left: 1rem;
     font-size: 2rem;
     text-align: left;
     display: flex;
@@ -110,24 +110,24 @@ h2 {
 
 @media screen and (min-width: 1025px) {
   .bundles {
-    margin: 0.6rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 1rem;
+    grid-template-columns: 48vw 49vw;
+
     align-items: center;
     justify-content: center;
   }
 
   .bundleImg {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
+    margin-left: 3vw;
+    justify-content: left;
+    align-items: left;
   }
 
   .bundleImg img {
     width: 44vw;
-    height: 40rem;
+    height: 45vh;
+
     object-fit: cover;
     border-radius: 1rem;
   }
@@ -138,21 +138,22 @@ h2 {
     color: white;
     padding: 2rem;
     border-radius: 10px;
-    height: 40rem;
-    width: 43vw;
+    height: 45vh;
+    width: 40vw;
     object-fit: cover;
   }
 
   .bundleDescription {
     color: white;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     display: flex;
     justify-self: left;
   }
   .bundleDescription1 {
     margin-left: 2rem;
+    font-size: 1rem;
   }
   .buyBundle {
     display: flex;
@@ -161,7 +162,7 @@ h2 {
     border-radius: 1rem;
     color: rgba(34, 81, 236, 0.904);
     border: rgba(34, 81, 236, 0.904);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;

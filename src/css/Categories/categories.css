@@ -1,10 +1,7 @@
-.categories {
-  padding: 1rem;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 1vh;
 }
 
 .category {
@@ -45,19 +42,11 @@ h2 {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .categories {
-    padding: 1 rem;
-    margin-top: 1rem;
-  }
-
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    column-gap: 1 rem;
-  }
-
-  .category {
-    margin-left: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(24vw, 0fr));
+    margin-left: 1vw;
+    column-gap: 1 vw;
   }
 
   .categoryImg img {
@@ -65,7 +54,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 30rem;
+    max-width: 24vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
   }
@@ -74,13 +63,10 @@ h2 {
 @media screen and (min-width: 1025px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    column-gap: 2rem;
-    margin-left: 1rem;
-  }
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 0fr));
 
-  .category {
-    margin-left: 10px;
+    gap: 2vw;
+    margin-left: 1rem;
   }
 
   .categoryImg img {
@@ -88,7 +74,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 2000px;
+    max-width: 20vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
   }

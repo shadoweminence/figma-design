@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
 
-  margin-left: 3vw;
+  margin-left: 2vw;
   padding: 10px;
   border-radius: 20px;
 }
@@ -69,17 +69,23 @@
 @media screen and (min-width: 1025px) {
   .ad {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    grid-template-columns: repeat(3, 28vw);
 
     align-items: center;
-    width: 100%;
+    width: 85vw;
+    gap: 1vw;
 
-    margin: 0.6rem;
-    margin-left: 1.2rem;
-    margin-right: 2.4rem;
-
-    padding: 0.6rem;
     border-radius: 1 rem;
+  }
+
+  .ads {
+    display: grid;
+    grid-template-columns: 14vw 14vw;
+
+    align-items: left;
+    width: 90vw;
+
+    border-radius: 20rem;
   }
 
   .adName {
@@ -90,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 2rem;
     color: white;
     border-top-left-radius: 0.6rem;
     border-bottom-left-radius: 0.6rem;

@@ -34,6 +34,29 @@
   border: rgba(34, 81, 236, 0.904);
 }
 
+@media screen and (min-width: 768px) {
+  .container1 {
+    display: flex;
+    /* Aligns items in a row */
+    height: 40vh;
+    width: 95vw;
+    text-align: left;
+    background-color: rgba(34, 81, 236, 0.904);
+
+    padding: 2rem 1.2rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+  }
+  .offerImg img {
+    width: auto;
+
+    height: 10vh;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .container1 {
     display: flex;
@@ -68,13 +91,10 @@
   }
 
   .discount {
-    position: absolute;
-    left: 18rem;
     font-size: 6rem;
+    margin-left: 5vw;
   }
   .offerName {
-    position: absolute;
-    left: 33rem;
     font-size: 3rem;
   }
 
@@ -85,9 +105,8 @@
     padding: 0.6rem 1.2rem;
     border: none;
     display: flex;
-    position: absolute;
-    right: 10rem;
+    margin-left: 10vw;
+
     font-size: 1.2rem;
-    top: 10rem;
   }
 }

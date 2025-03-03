@@ -4,6 +4,7 @@ import product2 from "../../assets/productImage2.png";
 
 import RecommendedProducts from "./RecommendedProducts";
 import "../../css//Products/recommend.css";
+import ShowAll from "./ShowAllProducts";
 
 const Products: React.FC = () => {
   const products = [
@@ -27,28 +28,20 @@ const Products: React.FC = () => {
       description: "Omnires | Part No. 2123532",
       description1: "Basin width: 45cm, Basin Height: 12 cm, Basin depth:35cm",
     },
-    {
-      image: product1,
-      alt: "handle omnires",
-      discount: 30,
-      name: "Connection with a handle Omnires round",
-      price: 45.0,
-      oldPrice: 55.0,
-      description: "Omnires | Part No. 2123532",
-      description1: "Basin width: 45cm, Basin Height: 12 cm, Basin depth:35cm",
-    },
   ];
 
   return (
     <div>
-      <div className="product">
+      <div className="align">
         <h2>Recommended Products</h2>
-
-        <div className="grids">
-          {products.map((product, index) => (
-            <RecommendedProducts key={index} product={product} />
-          ))}
+        <div className="showBig">
+          <ShowAll />
         </div>
+      </div>
+      <div className="grids">
+        {products.map((product, index) => (
+          <RecommendedProducts key={index} product={product} />
+        ))}
       </div>
     </div>
   );

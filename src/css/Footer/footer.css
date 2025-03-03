@@ -1,8 +1,8 @@
 @media screen and (min-width: 1025px) {
   .signDrop {
     display: grid;
-    grid-template-columns: 40vw 50vw;
-    gap: 10vw;
+    grid-template-columns: 30vw 60vw;
+    gap: 5vw;
   }
 }
 
