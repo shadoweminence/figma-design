@@ -11,14 +11,15 @@
 }
 
 .adName {
-  background-color: rgb(255, 123, 0);
+  background-color: #ff7e27;
   height: 100%;
-  width: 50vw;
+  max-width: 50vw;
+
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -43,7 +44,7 @@
     max-width: 90vw;
   }
   .adName {
-    background-color: rgb(255, 123, 0);
+    background-color: #ff7e27;
     height: 100%;
     width: 50vw;
     text-align: center;
@@ -93,7 +94,7 @@
   }
 
   .adName {
-    background-color: rgb(255, 123, 0);
+    background-color: #ff7e27;
     height: 100%;
     width: 15vw;
     text-align: center;
@@ -109,12 +110,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100%;
   }
 
   .adImg img {
     width: 15vw;
     height: 40vh;
-    object-fit: cover; /* Ensures the image scales properly */
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }

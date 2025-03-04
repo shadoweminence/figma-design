@@ -13,11 +13,11 @@ const Ads: React.FC = () => {
     },
     {
       image: ad2,
-      name: "New tool kits!",
+      name: "New rules for wind farms!",
     },
     {
       image: ad3,
-      name: "New tool kits!",
+      name: "New iPhone now available!",
     },
   ];
 

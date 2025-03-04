@@ -4,7 +4,7 @@
     grid-template-columns: 20vw 50vw;
     width: 90vw;
     gap: 10vw;
-    margin-left: 3vw;
+    margin-left: 0vw;
   }
 }
 
@@ -14,4 +14,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+}
+
+.allFoot {
+  background-color: #f6f8fb;
 }

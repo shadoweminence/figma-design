@@ -17,13 +17,13 @@
   border-radius: 1rem;
 }
 
-h2 {
+.bundleDescription {
   text-align: left;
-  margin-bottom: 1rem;
+  color: white;
 }
-
 .bundleDescription1 {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 .buyBundle {
   display: flex;
@@ -129,9 +129,9 @@ h2 {
   }
 
   .bundleImg img {
-    width: 49vw;
+    width: 45vw;
     height: 45vh;
-
+    margin-left: 2vw;
     object-fit: cover;
     border-radius: 1rem;
   }
@@ -159,6 +159,7 @@ h2 {
   .bundleDescription1 {
     margin-left: 1rem;
     font-size: 2rem;
+    max-width: 25vw;
   }
   .buyBundle {
     display: flex;

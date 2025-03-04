@@ -11,7 +11,7 @@ nav {
   position: relative;
   top: 0;
   left: 0;
-  width: 97vw;
+  width: 99vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ nav {
 
 /* Cart on the right */
 .cart {
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   margin-left: 1rem;
   color: rgba(34, 81, 236, 0.904);
@@ -48,6 +48,6 @@ nav {
   padding: 0.01rem 0.2rem;
   border-radius: 50%;
   background-color: orangered;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   font-weight: bold;
 }

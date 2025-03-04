@@ -8,7 +8,7 @@ import Services from "./Services";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="allFoot">
       <div className="signDrop">
         <div className="sign">
           <NewsLetter />

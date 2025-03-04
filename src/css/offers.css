@@ -24,7 +24,7 @@
   margin-bottom: 0.6rem;
 }
 .offerName {
-  margin-bottom: 0.6rem;
+  margin-bottom: 4vh;
 }
 .offerBtn {
   background-color: white;
@@ -33,7 +33,7 @@
   padding: 1rem;
   font-weight: bold;
   border: #2580ff;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,6 +99,7 @@
     margin-left: 5vw;
   }
   .offerName {
+    margin-top: 3vh;
     font-size: 3rem;
   }
 

@@ -6,7 +6,7 @@ export default function DPD() {
   return (
     <div className="layout">
       <div className="dpd">
-        <h2 className="dpdH2">DPD delivery already available</h2>
+        <h2 className="dpdH2">DPD delivery already available!</h2>
 
         <p>Choose DPD for speed, ease and convenience.</p>
         <p>
