@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp, FaRegUserCircle } from "react-icons/fa";
 import { MdOutlinePhoneEnabled, MdMailOutline } from "react-icons/md";
 
 interface User {
   name: string;
   surname: string;
   phone: string;
+  messages: string;
   options: string;
 }
 
@@ -30,17 +31,19 @@ const User: React.FC<UserProps> = ({ user }) => {
       </div>
       <p>|</p>
       <div>
-        <p className="components">
+        <p className=" message components">
           <MdMailOutline className="messages" />
-          <span className="msg"> Messages</span>
+          {user.messages}
         </p>
+
         <span className="messageValue">45</span>
       </div>
       <p>|</p>
 
       <div>
-        <div className="navDrop  components" onClick={handleDrop}>
+        <div className="navDrop userName components" onClick={handleDrop}>
           <p className={isDropped ? "active " : ""}>
+            <FaRegUserCircle className="user" />
             {user.name} {user.surname}
             {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
           </p>

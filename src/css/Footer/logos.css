@@ -5,8 +5,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-
-  margin-left: 1rem;
+  margin-left: 20vw;
 }
 
 .fb {
@@ -31,11 +30,13 @@
 .logo {
   display: flex;
   justify-content: center;
+  align-self: center;
 
   font-size: 1rem;
 }
 
 .copyright {
+  margin-left: 20vw;
   text-align: center;
   margin-top: 1rem;
 }

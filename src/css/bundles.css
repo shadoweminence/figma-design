@@ -4,11 +4,13 @@
   align-items: center;
   gap: 0.8rem;
   margin-left: 0.5rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .bundleDetails {
   width: 90vw;
-  background-color: rgba(34, 81, 236, 0.904);
+  background-color: #1071ff;
   font-size: 1rem;
   color: white;
   padding: 1rem;
@@ -28,8 +30,8 @@ h2 {
   justify-self: center;
   padding: 0.8rem;
   border-radius: 1rem;
-  color: rgba(34, 81, 236, 0.904);
-  border: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
+  border: #1071ff;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 2rem;
@@ -73,7 +75,7 @@ h2 {
   }
 
   .bundleDetails {
-    background-color: rgba(34, 81, 236, 0.904);
+    background-color: #1071ff;
     font-size: 1rem;
     color: white;
     padding: 0.2rem;
@@ -98,8 +100,8 @@ h2 {
     justify-self: left;
     padding: 0.6rem;
     border-radius: 1rem;
-    color: rgba(34, 81, 236, 0.904);
-    border: rgba(34, 81, 236, 0.904);
+    color: #1071ff;
+    border: #1071ff;
     font-size: 1rem;
     font-weight: bold;
     margin-top: 0.6rem;
@@ -135,7 +137,7 @@ h2 {
   }
 
   .bundleDetails {
-    background-color: rgba(34, 81, 236, 0.904);
+    background-color: #1071ff;
     font-size: 3rem;
     color: white;
     padding: 2rem;
@@ -152,18 +154,19 @@ h2 {
     text-align: left;
     display: flex;
     justify-self: left;
+    margin-top: 1vh;
   }
   .bundleDescription1 {
-    margin-left: 3rem;
-    font-size: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
   }
   .buyBundle {
     display: flex;
     justify-self: left;
     padding: 1rem;
     border-radius: 1rem;
-    color: rgba(34, 81, 236, 0.904);
-    border: rgba(34, 81, 236, 0.904);
+    color: #1071ff;
+    border: #1071ff;
     font-size: 1rem;
     font-weight: bold;
     margin-top: 2rem;

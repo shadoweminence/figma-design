@@ -1,30 +1,30 @@
 import "./App.css";
 import DPD from "./components/DPD";
 
-import Ad from "./components/Ads/Ad";
-import Bundle from "./components/Bundle/Bundle";
-
 import Offers from "./components/Offer/Offers";
-import Product from "./components/Products/Product";
 
 import Footer from "./components/Footer/Footer";
-import Category from "./components/Categories/Category";
-import HintMain from "./components/Hints/HintMain";
-import EventMain from "./components/Events/EventMain";
+
 import Header from "./components/Header/Header";
+import Ads from "./components/Ads/Ads";
+import Bundles from "./components/Bundle/Bundles";
+import Products from "./components/Products/Products";
+import Categories from "./components/Categories/Categories";
+import Events from "./components/Events/Events";
+import Hints from "./components/Hints/Hints";
 
 function App() {
   return (
     <>
       <Header />
-      <Product />
+      <Products />
       <Offers />
-      <Category />
-      <HintMain />
-      <Bundle />
-      <Ad />
+      <Categories />
+      <Hints />
+      <Bundles />
+      <Ads />
       <DPD />
-      <EventMain />
+      <Events />
       <Footer />
     </>
   );

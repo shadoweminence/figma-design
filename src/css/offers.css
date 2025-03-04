@@ -6,12 +6,12 @@
   height: auto;
   width: 100vw;
   text-align: center;
-  background-color: rgba(34, 81, 236, 0.904);
+  background-color: #2580ff;
   margin-top: 1.2rem;
 
   padding-top: 2rem;
   padding-bottom: 1.2rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: white;
   font-weight: bold;
 }
@@ -20,6 +20,7 @@
   margin-bottom: 0.6rem;
 }
 .discount {
+  font-size: 3rem;
   margin-bottom: 0.6rem;
 }
 .offerName {
@@ -27,11 +28,12 @@
 }
 .offerBtn {
   background-color: white;
-  color: rgba(34, 81, 236, 0.904);
-  border-radius: 1rem;
-  padding: 0.6rem;
+  color: #2580ff;
+  border-radius: 2rem;
+  padding: 1rem;
   font-weight: bold;
-  border: rgba(34, 81, 236, 0.904);
+  border: #2580ff;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,9 +41,9 @@
     display: flex;
     /* Aligns items in a row */
     height: 40vh;
-    width: 95vw;
+    width: 98vw;
     text-align: left;
-    background-color: rgba(34, 81, 236, 0.904);
+    background-color: #2580ff;
 
     padding: 2rem 1.2rem;
     font-size: 2rem;
@@ -67,7 +69,7 @@
     height: 20vh;
     width: 99vw;
     text-align: left;
-    background-color: rgba(34, 81, 236, 0.904);
+    background-color: #2580ff;
     margin-left: -3vw;
     padding: 2rem 1.2rem;
     font-size: 2rem;
@@ -80,10 +82,10 @@
 
   .offerImg img {
     width: 9vw;
-    max-width: 20rem;
+    max-width: 10vw;
     height: auto;
-    margin-left: 0.6rem;
-    padding-left: 3rem;
+    margin-left: 3vw;
+    padding-left: 3vw;
   }
 
   .discount,
@@ -102,14 +104,14 @@
 
   .offerBtn {
     background-color: white;
-    color: rgba(34, 81, 236, 0.904);
+    color: #2580ff;
     border-radius: 1.2rem;
-    padding: 0.6rem 1.2rem;
+    padding: 0.7vh 1.2vw;
     border: none;
     display: flex;
-    margin-left: 20vw;
+    margin-left: 15vw;
     font-weight: normal;
 
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

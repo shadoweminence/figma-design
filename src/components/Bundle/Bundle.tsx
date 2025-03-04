@@ -1,24 +1,31 @@
 import React from "react";
-import bundle from "../../assets/bundle.png";
+import "../../css/bundles.css";
 
-import BuyBundle from "./BuyBundle";
-const Bundle: React.FC = () => {
-  const bundles = [
-    {
-      image: bundle,
-      description: "Buy this bundle and save $100!",
-      description1:
-        "Longer sentence, for just two lines and it could be very very long",
-    },
-  ];
+interface Bundle {
+  image?: string;
+  alt?: string;
+  description?: string;
+  description1?: string;
+}
 
+interface BundleProps {
+  bundle: Bundle;
+}
+
+const Bundle: React.FC<BundleProps> = ({ bundle }) => {
   return (
-    <div>
-      <div>
+    <div className="bundles">
+      <div className="bundleImg">
+        <img src={bundle.image} alt={bundle.alt} />
+      </div>
+
+      <div className="bundleDetails">
         <div>
-          {bundles.map((bundle, index) => (
-            <BuyBundle key={index} bundle={bundle} />
-          ))}
+          <h2 className="bundleDescription"> {bundle.description}</h2>
+        </div>
+        <div className="bundleDescription1">{bundle.description1}</div>
+        <div>
+          <button className="buyBundle">Buy this bundle</button>
         </div>
       </div>
     </div>

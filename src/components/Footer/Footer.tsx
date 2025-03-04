@@ -1,20 +1,21 @@
 import React from "react";
-import SignUpForm from "./SignUpForm";
 
 import Logos from "./Logos";
 import "../../css/Footer/footer.css";
-import DropdownItems from "./DropdownItems";
+
+import NewsLetter from "./NewsLetter";
+import Services from "./Services";
 
 const Footer = () => {
   return (
     <div>
       <div className="signDrop">
         <div className="sign">
-          <SignUpForm />
+          <NewsLetter />
         </div>
 
         <div className="drop">
-          <DropdownItems />
+          <Services />
         </div>
       </div>
 

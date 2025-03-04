@@ -1,10 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { FaRegStar } from "react-icons/fa";
 import compare from "../../../assets/compare.png";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import "../../../css/Header/laptop/nav.css";
+import { RootState } from "../../../redux/store";
 
 const Icons = () => {
+  const cart = useSelector((state: RootState) => state.cart);
   return (
     <div>
       <div className="optionsGrid">
@@ -22,7 +25,7 @@ const Icons = () => {
           <MdOutlineShoppingCart className="navCart" />
           <p className="topics">CART</p>
           <p className="topicss">Active Cart Name</p>
-          <span className="cartValue">45</span>
+          <span className="cartValue">{cart.items.length}</span>
         </div>
       </div>
     </div>

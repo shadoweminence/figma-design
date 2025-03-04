@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/Footer/signUp.css";
 
-export default function SignUpForm() {
+export default function NewsLetter() {
   return (
     <div className="signUp">
       <h3>Sign up for news</h3>

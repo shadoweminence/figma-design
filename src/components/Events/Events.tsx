@@ -8,8 +8,10 @@ import "../../css/flex.css";
 
 import Event from "./Event";
 import ShowAllEvents from "./ShowAllEvents";
+import useScreenSize from "../hooks/useScreenSize";
 
 const Events: React.FC = () => {
+  const isLaptop = useScreenSize();
   const events = [
     {
       image: event1,
@@ -46,18 +48,34 @@ const Events: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div className="align">
-        <h2>Events for you</h2>
-        <div className="showBig">
-          <ShowAllEvents />
-        </div>
-      </div>
-      <div className="events">
-        {events.map((event, index) => (
-          <Event key={index} event={event} />
-        ))}
-      </div>
+    <div className="rec">
+      {isLaptop ? (
+        <>
+          <div className="eventAlign">
+            <h2>Events for you</h2>
+            <div className="showBig">
+              <ShowAllEvents />
+            </div>
+          </div>
+          <div className="events">
+            {events.map((event, index) => (
+              <Event key={index} event={event} />
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <h2>Events for you</h2>
+          <div className="showBig">
+            <ShowAllEvents />
+          </div>
+          <div className="events">
+            {events.map((event, index) => (
+              <Event key={index} event={event} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

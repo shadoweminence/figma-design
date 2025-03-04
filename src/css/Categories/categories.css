@@ -1,7 +1,9 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 1vh;
+  grid-template-columns: 43vw 43vw;
+  column-gap: 3vw;
+  row-gap: 2vh;
+  margin-left: 2vw;
 }
 
 .category {
@@ -44,8 +46,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24vw, 0fr));
-    margin-left: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 0fr));
+    margin-left: 2vw;
     column-gap: 1 vw;
   }
 
@@ -77,5 +79,11 @@ h2 {
     max-width: 21vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
+  }
+
+  .categoryAlign {
+    display: flex;
+    gap: 36vw;
+    max-width: 80vw;
   }
 }

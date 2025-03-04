@@ -1,16 +1,32 @@
 import React from "react";
 
-import Categories from "./Categories";
-import ShowAllCategories from "./ShowAllCategories";
-import "../../css/flex.css";
+import "../../css/Categories/categories.css";
 
-const Category = () => {
+// Define the expected props for the component
+interface Category {
+  image: string;
+  alt?: string;
+  name: string; // Product name
+}
+interface CategoryProps {
+  category: Category;
+}
+
+// Accept props using the defined interface
+const Category: React.FC<CategoryProps> = ({ category }) => {
   return (
-    <div className="catFlex">
-      <Categories />
+    <div>
+      <div className="categories">
+        <div className="grid">
+          <div className="category">
+            <div className="categoryImg">
+              {" "}
+              <img src={category.image} alt={category.alt} />
+            </div>
 
-      <div className="showSmall">
-        <ShowAllCategories />
+            <p className="title">{category.name}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

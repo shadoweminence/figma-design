@@ -1,7 +1,8 @@
 import React from "react";
-import Dropdown from "./Dropdown";
 
-const DropdownItems: React.FC = () => {
+import Service from "./Service";
+
+const Services: React.FC = () => {
   const items = [
     {
       title: "How to buy",
@@ -25,16 +26,12 @@ const DropdownItems: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div>
-        <div className="lapDrops">
-          {items.map((item, index) => (
-            <Dropdown key={index} item={item} />
-          ))}
-        </div>
-      </div>
+    <div className="lapDrops">
+      {items.map((item, index) => (
+        <Service key={index} item={item} />
+      ))}
     </div>
   );
 };
 
-export default DropdownItems;
+export default Services;

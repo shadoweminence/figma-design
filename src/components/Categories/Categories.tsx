@@ -5,10 +5,13 @@ import solar from "../../assets/solar.png";
 
 import phone from "../../assets/phone.png";
 import "../../css/Categories/categories.css";
-import RecommendedCategories from "./RecommendedCategories";
+
 import ShowAllCategories from "./ShowAllCategories";
+import Category from "./Category";
+import useScreenSize from "../hooks/useScreenSize";
 
 const Categories: React.FC = () => {
+  const isLaptop = useScreenSize();
   const categories = [
     {
       image: solar,
@@ -33,20 +36,35 @@ const Categories: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div>
-        <div className="align">
+    <div className="rec">
+      {isLaptop ? (
+        <>
+          <div className="categoryAlign">
+            <h2>Recommended Categories</h2>
+            <div className="showBig">
+              <ShowAllCategories />
+            </div>
+          </div>
+          <div className="grid">
+            {categories.map((category, index) => (
+              <Category key={index} category={category} />
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
           <h2>Recommended Categories</h2>
           <div className="showBig">
             <ShowAllCategories />
           </div>
-        </div>
-        <div className="grid">
-          {categories.map((category, index) => (
-            <RecommendedCategories key={index} category={category} />
-          ))}
-        </div>
-      </div>
+
+          <div className="grid">
+            {categories.map((category, index) => (
+              <Category key={index} category={category} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

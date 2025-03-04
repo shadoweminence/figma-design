@@ -33,6 +33,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(243, 240, 240);
+    width: 98vw;
   }
   .dpd {
     text-align: left;

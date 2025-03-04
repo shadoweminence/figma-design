@@ -7,8 +7,10 @@ import hint4 from "../../assets/hint4.png";
 import "../../css/hints.css";
 import Hint from "./Hint";
 import ShowAllHints from "./ShowAllHints";
+import useScreenSize from "../hooks/useScreenSize";
 
 const Hints: React.FC = () => {
+  const isLaptop = useScreenSize();
   const hints = [
     {
       image: hint1,
@@ -41,20 +43,36 @@ const Hints: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div className="hint">
-        <div className="align">
+    <div className="rec">
+      {isLaptop ? (
+        <>
+          <div className="hint">
+            <div className="hintAlign">
+              <h2>Hints for you</h2>
+              <div className="showBig">
+                <ShowAllHints />
+              </div>
+            </div>
+            <div className="hints">
+              {hints.map((hint, index) => (
+                <Hint key={index} hint={hint} />
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
           <h2>Hints for you</h2>
           <div className="showBig">
             <ShowAllHints />
           </div>
-        </div>
-        <div className="hints">
-          {hints.map((hint, index) => (
-            <Hint key={index} hint={hint} />
-          ))}
-        </div>
-      </div>
+          <div className="hints">
+            {hints.map((hint, index) => (
+              <Hint key={index} hint={hint} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

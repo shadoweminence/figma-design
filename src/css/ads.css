@@ -3,7 +3,7 @@
   grid-template-columns: 45vw 45vw;
 
   align-items: center;
-  width: 100%;
+  max-width: 95vw;
 
   margin-left: 2vw;
   padding: 10px;
@@ -38,6 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .ad {
+    margin-left: 2vw;
+    max-width: 90vw;
+  }
   .adName {
     background-color: rgb(255, 123, 0);
     height: 100%;
@@ -74,7 +78,7 @@
     align-items: center;
     width: 85vw;
     gap: 1vw;
-
+    margin-left: -1vw;
     border-radius: 1 rem;
   }
 

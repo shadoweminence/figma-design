@@ -1,14 +1,17 @@
 .search-container {
+  width: 97vw;
   position: relative;
   display: flex;
   align-items: center;
+  padding: 1rem;
+  background-color: rgb(247, 247, 247);
 
   margin: 0.045em;
 }
 
 .search-icon {
   position: absolute;
-  left: 0.5rem;
+  left: 1.5rem;
   font-size: 1rem;
   color: rgba(34, 81, 236, 0.904);
 }

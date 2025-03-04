@@ -43,10 +43,11 @@
 @media screen and (min-width: 768px) {
   .hints {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 45vw);
     margin-bottom: 1rem;
     margin-left: 1rem;
-    gap: 0.2rem;
+    gap: 2vw;
+    max-width: 97vw;
   }
 
   .hintImg {
@@ -100,5 +101,12 @@
     max-width: 21vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
+  }
+  .hintAlign {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 49vw;
+    max-width: 79vw;
   }
 }

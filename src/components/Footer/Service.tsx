@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import "../../css/Footer/dropdown.css";
+import useScreenSize from "../hooks/useScreenSize";
 
 interface Item {
   title: string;
@@ -11,23 +12,9 @@ interface ItemProps {
   item: Item;
 }
 
-const Dropdown: React.FC<ItemProps> = ({ item }) => {
+const Service: React.FC<ItemProps> = ({ item }) => {
   const [isDropped, setIsDropped] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isLaptop, setIsLaptop] = useState(window.innerWidth > 1024);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      const width = window.innerWidth;
-      setWindowWidth(width);
-      setIsLaptop(width > 1024);
-    };
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, [windowWidth]);
+  const isLaptop = useScreenSize();
 
   const handleDrop = () => {
     setIsDropped(!isDropped);
@@ -81,4 +68,4 @@ const Dropdown: React.FC<ItemProps> = ({ item }) => {
   );
 };
 
-export default Dropdown;
+export default Service;

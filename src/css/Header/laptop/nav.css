@@ -14,42 +14,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3rem;
-  width: 50vw;
-  max-width: 90vw;
+
+  width: 30vw;
+
   border: 0.1rem solid rgb(235, 235, 235);
   border-radius: 0.5rem;
 }
 .search-icons {
   position: absolute;
-  left: 24.5vw;
+  left: 35.5vw;
   font-size: 1rem;
-  color: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
 }
 .quickOrder {
-  background-color: rgba(34, 81, 236, 0.904);
+  background-color: #1071ff;
   padding: 0.6rem;
   color: white;
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin: 0.6rem;
-  border: rgba(34, 81, 236, 0.904);
-  font-size: 1.5rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  margin-right: 5rem;
+  border: #1071ff;
+  font-size: 1.2rem;
+  padding: 1vh 1vw;
+  margin-right: 6vw;
 }
 /* css fro nav ends here  */
 
 /* remaining css for headers like bottom nav,*/
 .bigGrid {
   margin-left: -3vw;
-  width: 100vw;
+  width: 99vw;
   display: flex;
 
-  gap: 25vw;
+  gap: 23vw;
 
   position: relative;
-  background-color: rgb(241, 246, 250);
+  background-color: #f6f8fb;
   padding: 1.5rem;
 }
 
@@ -58,16 +57,25 @@
   display: flex;
   gap: 1vw;
 }
+.navNoOptions {
+  margin-top: 1vh;
+  font-weight: bold;
+}
 
 .navDrop {
   display: flex;
   flex-direction: row;
 }
+.optionsDrop {
+  margin-top: 1vh;
+  font-size: 1.2rem;
+  margin-right: 0.3vw;
+}
 
 .optionsGrid {
   display: flex;
-
-  gap: 4vw;
+  position: relative;
+  gap: 6vw;
 }
 
 .comp img {
@@ -89,39 +97,41 @@
   align-items: center;
   justify-content: center;
   height: 4vh;
-  color: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
 }
 
 .navCart {
-  height: 3vh;
-
-  margin-left: 2.5vw;
-  color: rgba(34, 81, 236, 0.904);
+  height: 4vh;
+  position: relative;
+  margin-left: 2vw;
+  color: #1071ff;
 }
 .topics {
   position: absolute;
 
   top: 3rem;
-  color: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
   display: flex;
+
   align-items: center;
   justify-content: center;
   justify-items: center;
   text-align: center;
-  margin-left: 2vw;
+  margin-left: 1.5vw;
+  margin-top: -2vh;
   font-weight: bold;
   font-size: 0.9rem;
 }
 
 .topicss {
-  color: rgba(34, 81, 236, 0.904);
+  font-size: 0.6rem;
+  color: #1071ff;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
+  align-items: let;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
   margin-top: 1vh;
-  margin-right: 1vw;
 }
 
 .compareValue {
@@ -130,7 +140,7 @@
   position: relative;
   padding: 0.1rem 0.2rem;
   border-radius: 50%;
-  background-color: orangered;
+  background-color: #ff4e00;
   font-size: 0.6rem;
   align-self: center;
   font-weight: bold;
@@ -144,19 +154,20 @@
   color: white;
   padding: 0.1rem 0.2rem;
   border-radius: 50%;
-  background-color: orangered;
+  background-color: #ff4e00;
   font-size: 0.6rem;
   font-weight: bold;
 }
 
 .cartValue {
-  position: relative;
-  top: -8vh;
+  position: absolute;
+  top: 0vh;
+  right: 0.7vw;
   margin-left: 3vw;
   color: white;
   padding: 0.1rem 0.2rem;
   border-radius: 50%;
-  background-color: orangered;
+  background-color: #ff4e00;
   font-size: 0.6rem;
   font-weight: bold;
   align-self: center;
@@ -165,18 +176,19 @@
 /* from here the css for right corner of top nav starts i.e. user values  */
 .userTitles {
   display: flex;
-  gap: 4vw;
+  gap: 1vw;
 }
 
 .bigGridd {
   margin-left: -3vw;
   display: flex;
-  background-color: rgb(241, 246, 250);
-  width: 100vw;
-  gap: 25vw;
+  background-color: #f6f8fb;
+  max-width: 98vw;
+  gap: 30vw;
   padding: 0.6rem;
   position: relative;
 }
+
 .navTitless {
   margin-left: 5vw;
   display: flex;
@@ -184,27 +196,30 @@
 }
 
 .number {
-  color: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
   margin-top: 0.5vh;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .messages {
   margin-right: 0.5vw;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
+.userName {
+  font-size: 1.2rem;
+}
 .msg {
   position: absolute;
   top: 1vh;
 }
 .messageValue {
-  position: relative;
-  top: -4.5vh;
+  position: absolute;
+  top: 0vh;
   color: white;
   padding: 0.1rem 0.2rem;
   border-radius: 50%;
-  background-color: orangered;
-  font-size: 1rem;
+  background-color: #ff7e27;
+  font-size: 0.7rem;
   font-weight: bold;
   margin-left: 0.5vw;
 }
