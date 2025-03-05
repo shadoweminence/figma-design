@@ -4,8 +4,6 @@ import event2 from "../../assets/event2.png";
 import event3 from "../../assets/event3.png";
 import event4 from "../../assets/event4.png";
 
-import "../../css/flex.css";
-
 import Event from "./Event";
 import ShowAllEvents from "./ShowAllEvents";
 import useScreenSize from "../hooks/useScreenSize";

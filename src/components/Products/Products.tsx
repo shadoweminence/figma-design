@@ -4,7 +4,7 @@ import product2 from "../../assets/productImage2.png";
 import product3 from "../../assets/productImage3.png";
 import product4 from "../../assets/productImage4.png";
 
-import { FaChevronRight } from "react-icons/fa";
+import { GoChevronRight } from "react-icons/go";
 
 import ShowAll from "./ShowAllProducts";
 import Product from "./Product";
@@ -97,7 +97,7 @@ const Products: React.FC = () => {
           <div className="button-container">
             <button onClick={handleNext}>
               {" "}
-              <FaChevronRight className="iconsssss" />
+              <GoChevronRight className="iconRight" />
             </button>
           </div>
         </>
@@ -120,7 +120,7 @@ const Products: React.FC = () => {
           <div className="button-container">
             <button onClick={handleNext}>
               {" "}
-              <FaChevronRight className="iconsssss" />
+              <GoChevronRight className="iconRight" />
             </button>
           </div>
         </>

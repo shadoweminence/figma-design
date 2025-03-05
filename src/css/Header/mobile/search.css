@@ -1,5 +1,5 @@
 .search-container {
-  width: 97vw;
+  width: 99vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -9,14 +9,15 @@
 
 .search-icon {
   position: absolute;
-  left: 4vw;
-  font-size: 1.5rem;
+  left: 8vw;
+
+  font-size: 1.3rem;
   color: rgba(34, 81, 236, 0.904);
 }
 
 input {
   width: 100%;
-  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  padding: 2vh 12vw;
   border: 0.1rem solid white;
   border-radius: 5px;
   font-size: 1rem;

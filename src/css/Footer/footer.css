@@ -1,10 +1,15 @@
 @media screen and (min-width: 1025px) {
   .signDrop {
     display: grid;
-    grid-template-columns: 20vw 50vw;
+    grid-template-columns: 15vw 50vw;
     width: 90vw;
-    gap: 10vw;
+    gap: 15vw;
     margin-left: 0vw;
+  }
+
+  .allFoot {
+    background-color: #f6f8fb;
+    margin-left: -2vw;
   }
 }
 

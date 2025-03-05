@@ -4,7 +4,7 @@ import "../../css/Footer/newsletter.css";
 export default function NewsLetter() {
   return (
     <div className="signUp">
-      <h3>Sign up for news</h3>
+      <h3 className="newsletterH3">Sign up for news</h3>
 
       <div className="signUpDescription">
         <p>
@@ -21,7 +21,7 @@ export default function NewsLetter() {
         <button className="signupButton">Sign up for newsletter</button>
       </div>
       <div className="check">
-        <input type="checkbox" name="personalData" />
+        <input type="checkbox" name="personalData" className="blue" />
         <label htmlFor="personalData">
           I accept <span className="blue">the personal data management</span>{" "}
         </label>

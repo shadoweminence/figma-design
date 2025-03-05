@@ -22,8 +22,11 @@
 }
 
 .items li {
+  margin-top: 2vh;
+  line-height: 5vh;
   white-space: normal;
   overflow: visible;
+  font-size: 0.9rem;
 }
 
 .drop h4.active {
@@ -45,16 +48,34 @@
 @media screen and (min-width: 1025px) {
   .lapDrops {
     display: grid;
-    grid-template-columns: repeat(4, 10vw);
+    grid-template-columns: repeat(4, 11vw);
     gap: 5vw;
     margin-left: 3vw;
-    font-size: 1rem;
+
     white-space: normal;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     white-space: normal;
+  }
+
+  .items ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .items li {
+    margin-top: 2vh;
+    line-height: 5vh;
+    white-space: normal;
+    overflow: visible;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .drop h4.active {
+    color: rgba(34, 81, 236, 0.904);
   }
 }

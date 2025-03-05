@@ -1,47 +1,57 @@
 h2 {
   margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0vh;
 }
 
 .events {
   margin-left: 0.2rem;
   margin-left: 2vw;
   margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 
 h3 {
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
   margin-right: 0.6rem;
+  padding: 1vh 2vw;
+  font-size: 1.2rem;
+  padding-right: 10vw;
 }
 
 .eventDateTime {
-  color: rgba(34, 81, 236, 0.904);
-  margin-top: 0.6rem;
+  color: #1071ff;
+  padding: 0vh 2vw;
+
   margin-bottom: 0.6rem;
 }
 
 .eventDescription {
-  margin-right: 0.6rem;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-right: 20vw;
+  margin-right: 0.7rem;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Limit to 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: black;
   margin-bottom: 0.5rem;
 }
 .moreEvents {
   margin: 5px;
-  border-color: rgba(34, 81, 236, 0.904);
-  color: rgba(34, 81, 236, 0.904);
-  font-size: 1rem;
+  border-color: #1071ff;
+  color: #1071ff;
+  font-size: 0.8rem;
+  font-weight: bold;
   border-radius: 0.2rem;
-  padding: 1rem;
+  padding: 2vh 8vw;
   border-radius: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+
   background-color: white;
   margin-bottom: 1.2rem;
 }
@@ -94,12 +104,19 @@ h3 {
     margin-top: 4rem;
     text-align: left;
   }
+
+  .eventDateTime {
+    padding-left: 0.5vw;
+    padding-right: 2vw;
+    font-size: 1.2rem;
+  }
   .events {
     display: grid;
     grid-template-columns: repeat(4, 21vw);
     margin-bottom: 1rem;
     gap: 2vw;
   }
+
   .eventImg {
     display: flex;
     justify-content: center;
@@ -108,29 +125,33 @@ h3 {
   .eventDescription {
     margin-right: 0.6rem;
     display: -webkit-box;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
     -webkit-line-clamp: 3; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: black;
     margin-bottom: 0.5rem;
   }
 
   .eventImg img {
-    width: 20vw;
+    width: 21vw;
 
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
   }
   h3 {
-    font-size: 1.8rem;
-    min-height: 8vh;
+    font-size: 2.1rem;
+    min-height: 11vh;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
   }
   .eventAlign {
     display: flex;
-    gap: 60vw;
-    max-width: 90vw;
+    gap: 58vw;
+    max-width: 80vw;
   }
 }

@@ -5,6 +5,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding-left: 5vw;
 }
 
 .fb {
@@ -26,18 +27,19 @@
   padding: 0.3rem;
 }
 
-.logo {
+.logo1 {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-left: 30vw;
-  padding-left: 18vw;
+
+  padding-left: 5vw;
   font-size: 1rem;
 }
 
 .copyright {
+  padding-left: 5vw;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 7vh;
 }
 @media screen and (min-width: 768px) {
   .foot {
@@ -45,7 +47,8 @@
     flex-direction: row;
     width: 100vw;
 
-    border-top: 0.1rem solid grey;
+    border-top: 0.1rem solid rgb(226, 226, 226);
+    padding-top: 2vh;
   }
 
   .copyright {
@@ -55,7 +58,6 @@
     font-size: 1rem;
     color: grey;
 
-    padding: 0.1rem;
     margin-bottom: 1rem;
   }
 
@@ -68,6 +70,7 @@
   }
   .social {
     order: 2;
+    margin-top: 2vh;
     padding: 0.2rem;
   }
 }
@@ -88,22 +91,21 @@
     font-size: 1rem;
     color: grey;
 
-    padding: 0.1rem;
+    padding-left: 5vw;
     margin-bottom: 1rem;
   }
 
   .logo1 {
     order: 3;
+    padding-right: 6vw;
   }
   .logo1 img {
     margin-top: 1rem;
     padding: 0.2rem;
-    margin-right: 2vw;
   }
   .social {
     order: 2;
     margin-top: 2vh;
     padding: 0.2rem;
-    margin-right: 2vw;
   }
 }

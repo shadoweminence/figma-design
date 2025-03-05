@@ -25,14 +25,14 @@
 }
 
 .title {
-  background-color: #2580ff;
+  background-color: #1071ff;
   text-align: center;
   color: white;
   font-size: 1rem;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   font-weight: bold;
   min-height: 9vh;
   display: flex;
@@ -73,6 +73,8 @@ h2 {
 
     gap: 2vw;
     margin-left: 1rem;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
   }
 
   .categoryImg img {
@@ -85,11 +87,14 @@ h2 {
   }
   .title {
     width: 21vw;
+    font-size: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 
   .categoryAlign {
     display: flex;
-    gap: 48vw;
-    max-width: 80vw;
+    gap: 57vw;
+    max-width: 90vw;
   }
 }

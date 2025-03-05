@@ -15,7 +15,7 @@ const Ad: React.FC<AdProps> = ({ ad }) => {
   return (
     <div className="ads">
       <div className="adName">
-        <h2> {ad.name}</h2>
+        <h2 className="adH2"> {ad.name}</h2>
       </div>
       <div className="adImg">
         <img src={ad.image} alt={ad.alt} />

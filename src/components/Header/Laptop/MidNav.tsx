@@ -8,13 +8,17 @@ import "../../../css/Header/laptop/nav.css";
 function MidNav() {
   return (
     <nav className="headNav">
-      <div className="logo">
+      <div className="laptopNavLogo">
         <img src={companyLogo} alt="logo" />
       </div>
 
       <div className="search-containers">
         <IoSearch className="search-icons" />
-        <input type="text" placeholder="Search by product or SKU" />
+        <input
+          type="text"
+          placeholder="Search by product or SKU "
+          className="searchItem"
+        />
       </div>
 
       <div>

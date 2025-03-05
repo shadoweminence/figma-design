@@ -1,7 +1,7 @@
 import React from "react";
 import compare from "../../assets/compare.png";
 import { FaRegStar } from "react-icons/fa";
-import { CiShare2 } from "react-icons/ci";
+import { MdOutlineShare } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import { FaAngleDown, FaExclamationCircle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
@@ -47,7 +47,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
       <div className="product1">
         <img className="productImage" src={product.image} alt={product.alt} />
         <FaRegStar className="star" />
-        <CiShare2 className="share" />
+        <MdOutlineShare className="share" />
         <div className="stock">
           {product.stock ? (
             <>
@@ -66,7 +66,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
 
         <span className="badge1">-{product.discount}%</span>
 
-        <div>
+        <div className="productDescription">
           <p className="description">{product.description}</p>
           <h3 className="name">{product.name}</h3>
 

@@ -5,6 +5,12 @@ html {
 body {
   background-color: rgb(255, 251, 251);
   line-height: 1.5;
+  font-family: "Basier Square";
+}
+
+h2,
+h3 {
+  font-family: "Basier Circle";
 }
 
 @media screen and (min-width: 1025px) {

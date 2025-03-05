@@ -33,24 +33,29 @@ const User: React.FC<UserProps> = ({ user }) => {
           )}
         </p>
       </div>
-      <p>|</p>
+      <p className="distributer">|</p>
       <div>
-        <p className=" message components">
-          <MdMailOutline className="messages" />
+        <div className=" userIconAlign">
+          <p>
+            <MdMailOutline className="messages" />
+          </p>
+
           {user.messages}
-        </p>
+        </div>
 
         <span className="messageValue">45</span>
       </div>
-      <p>|</p>
+      <p className="distributer">|</p>
 
       <div>
-        <div className="navDrop userName components" onClick={handleDrop}>
-          <p className={isDropped ? "active " : ""}>
-            <FaRegUserCircle className="user" />
+        <div className="navDrop" onClick={handleDrop}>
+          <div className={isDropped ? "active userIconAlign" : "userIconAlign"}>
+            <p>
+              <FaRegUserCircle className="user" />
+            </p>
             {user.name} {user.surname}
             {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
-          </p>
+          </div>
         </div>
 
         {isDropped && (

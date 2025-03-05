@@ -8,32 +8,34 @@
   text-align: center;
   background-color: #2580ff;
   margin-top: 1.2rem;
+  margin-bottom: 5vh;
 
-  padding-top: 2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.8rem;
   font-size: 2.2rem;
   color: white;
   font-weight: bold;
 }
 
 .img {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1vh;
 }
 .discount {
   font-size: 3rem;
-  margin-bottom: 0.6rem;
+
+  margin-top: -2vh;
 }
 .offerName {
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 .offerBtn {
   background-color: white;
   color: #2580ff;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 2vh 8vw;
   font-weight: bold;
   border: #2580ff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,7 +68,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start; /* Aligns items in a row */
-    height: 20vh;
+    height: 27vh;
     width: 99vw;
     text-align: left;
     background-color: #2580ff;
@@ -81,8 +83,8 @@
   }
 
   .offerImg img {
-    width: 9vw;
-    max-width: 10vw;
+    width: 12vw;
+    max-width: 12vw;
     height: auto;
     margin-left: 3vw;
     padding-left: 3vw;
@@ -91,28 +93,28 @@
   .discount,
   .offerName,
   .offerBtn {
-    flex-shrink: 0; /* Prevents items from shrinking */
+    flex-shrink: 0;
   }
 
   .discount {
-    font-size: 6rem;
-    margin-left: 5vw;
+    font-size: 8rem;
+    margin-left: 1vw;
   }
   .offerName {
-    margin-top: 3vh;
-    font-size: 3rem;
+    font-size: 5rem;
+    margin-left: 2vw;
   }
 
   .offerBtn {
     background-color: white;
     color: #2580ff;
-    border-radius: 1.2rem;
-    padding: 0.7vh 1.2vw;
+    border-radius: 3rem;
+    padding: 2vh 2.5vw;
     border: none;
     display: flex;
-    margin-left: 15vw;
-    font-weight: normal;
+    font-weight: bold;
+    margin-left: 22vw;
 
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/hints.css";
-import { FaArrowRight } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 
 interface Hint {
   image: string;
@@ -27,7 +27,7 @@ const Hint: React.FC<HintProps> = ({ hint }) => {
         <div>
           <div className="moreHints">
             <p>Read More</p>
-            <FaArrowRight />
+            <FiArrowRight className="expandHint" />
           </div>
         </div>
       </div>

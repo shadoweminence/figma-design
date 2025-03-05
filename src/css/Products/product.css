@@ -1,4 +1,4 @@
-.recommend {
+.productCard {
   background-color: white;
   padding-bottom: 1rem;
   margin-left: 5vw;
@@ -10,7 +10,7 @@ h2 {
 .product-container {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  gap: 2vw;
+  gap: 0.5vw;
   overflow: hidden; /* Prevents manual scrolling */
   max-width: 95vw; /* Adjust width based on layout */
   margin-left: 2vw;
@@ -18,20 +18,12 @@ h2 {
 
 .rec {
   position: relative;
+  margin-top: -3vh;
 }
 .button-container {
-  margin-top: 11vh;
   position: absolute;
-  top: 76vh;
-  right: 1vw;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  background-color: #1071ff;
-
-  border-radius: 0.5rem;
-  width: 8vw;
-  padding: 1vh 1vw;
+  bottom: 5vh;
+  right: 5%;
 }
 
 button:hover {
@@ -42,6 +34,7 @@ button:hover {
   position: relative;
   display: inline-block;
   border: 0.1rem solid rgb(245, 245, 245);
+
   border-radius: 1rem;
   margin-left: 0.1rem;
 }
@@ -54,18 +47,18 @@ button:hover {
 .badge1 {
   position: absolute;
   border: 1 thin;
-  top: 1rem;
+  top: 1vh;
   left: 0rem;
   color: white;
   padding: 0.2rem;
-  background-color: rgb(253, 109, 56);
-  font-size: 1rem;
+  background-color: #ff7e27;
+  font-size: 0.6rem;
 }
 
 .star {
   position: absolute;
-  top: 2vh;
-  right: 1rem;
+  top: 1vh;
+  right: 2vw;
   color: #1071ff;
   padding: 0.2rem 0.2rem;
   border-radius: 50%;
@@ -76,14 +69,15 @@ button:hover {
 .compare {
   position: absolute;
   top: 15vh;
-  right: 1rem;
+  right: 2vw;
 }
 
 .share {
   position: absolute;
   top: 20vh;
-  right: 1rem;
+  right: 2vw;
   color: #1071ff;
+  font-size: 1.1rem;
 }
 
 .stock {
@@ -119,15 +113,17 @@ button:hover {
   color: #1071ff;
   text-align: left;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 .dollars {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .cut {
   text-decoration: line-through;
-  color: orange;
+  color: #ff7e27;
   display: block;
+  font-weight: normal;
 }
 
 .quantity {
@@ -154,11 +150,11 @@ button:hover {
 
 .item {
   font-size: 1rem;
-  width: 4vw;
+  width: 5vw;
   background-color: white;
   color: black;
   font-weight: normal;
-  margin-left: 1vw;
+  margin-left: 3vw;
 }
 
 .icon {
@@ -173,7 +169,7 @@ button:hover {
   background-color: #1071ff;
   color: white;
   border-radius: 200px;
-  width: 90%;
+  width: 95%;
   border: rgba(34, 81, 236, 0.904);
 }
 
@@ -184,12 +180,14 @@ button:hover {
 .name {
   color: black;
   min-height: 4rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: "Basier Circle";
 }
 
 .description {
   color: gray;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 h3 {
@@ -213,6 +211,8 @@ h3 {
 }
 .cartAdded {
   background-color: #e6effb;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -272,11 +272,20 @@ h3 {
     gap: 3vw;
     overflow: hidden; /* Prevents manual scrolling */
     max-width: 95vw; /* Adjust width based on layout */
+    margin-left: -3vw;
   }
-
+  .productCard {
+    margin-top: 2vh;
+    width: 20vw;
+  }
+  h2 {
+    padding-top: 5vh;
+  }
   .product1 {
-    width: 17vw;
+    width: 20vw;
     height: auto;
+  }
+  .productDescription {
     padding: 1rem;
   }
 
@@ -286,37 +295,17 @@ h3 {
   .button-container {
     margin-top: 11vh;
     position: absolute;
-    top: 40vh;
-    right: 8vw;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    background-color: #1071ff;
-    border: 1px #1071ff;
-    border-radius: 10rem;
-    width: 2vw;
-    padding: 0vh 0vw;
+    top: 45vh;
+    right: 5vw;
   }
-  .iconsssss {
+  .iconRight {
     background-color: #e6effb;
-    font-size: 2.5rem;
-    padding: 0.5vh;
-
-    color: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    font-size: 3rem;
   }
 
   .productImage {
-    height: 30vh;
-    width: 16vw;
-  }
-  .product1 {
-    position: relative;
-    display: inline-block;
-    border: 0.1rem solid rgb(245, 245, 245);
-    border-radius: 1rem;
+    height: 35vh;
+    width: 20vw;
   }
 
   .badge1 {
@@ -344,14 +333,14 @@ h3 {
   .compare {
     position: absolute;
     height: 3vh;
-    top: 21vh;
+    top: 25vh;
     right: 1rem;
   }
 
   .share {
     position: absolute;
     font-size: 2rem;
-    top: 26vh;
+    top: 30vh;
     right: 1rem;
     color: #1071ff;
   }
@@ -360,10 +349,11 @@ h3 {
     color: green;
     font-size: 1rem;
     font-weight: normal;
-    display: flex;
-    padding: 0.1rem;
-    margin-bottom: 2vh;
-    margin-left: 0.1rem;
+    position: absolute;
+    top: 31vh;
+
+    padding: 0.5vh 1vw;
+    border: 1px solid rgb(238, 238, 238);
   }
   .noStock {
     color: red;
@@ -389,6 +379,7 @@ h3 {
   .price {
     color: #1071ff;
     text-align: left;
+    font-size: 1.5rem;
   }
   .dollars {
     font-size: 2rem;
@@ -398,33 +389,35 @@ h3 {
     text-decoration: line-through;
     color: orange;
     display: inline;
+    font-size: 1.5rem;
   }
 
   .quantity {
     display: flex;
+    padding: 0 1rem;
   }
   .btn {
     font-size: 1rem;
     width: 15vw;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: white;
-    border: 0.1rem solid rgb(97, 94, 94);
+    border: 0.1rem solid rgb(216, 215, 215);
     border-radius: 0.5rem;
   }
   .select-container {
     margin-left: 0.5vw;
     position: relative;
     display: flex;
-    gap: 0.5vw;
+    gap: 0rem;
     align-items: center;
-    border: 0.1rem solid rgb(97, 94, 94);
+    border: 0.1rem solid rgb(218, 218, 218);
     border-radius: 5px;
     padding-right: 1rem;
   }
 
   .item {
     font-size: 1rem;
-    width: 8vw;
+    width: 10vw;
     background-color: white;
     color: black;
     font-weight: normal;
@@ -433,17 +426,19 @@ h3 {
 
   .icon {
     color: #1071ff;
+    font-size: 1.5rem;
   }
 
   .addCart {
-    font-size: 1rem;
+    font-size: 1.8rem;
     text-align: center;
-    padding: 0.8rem;
+    padding: 2vh 4vw;
+    margin: 1vh 0.5vw;
 
     background-color: #1071ff;
     color: white;
     border-radius: 200px;
-    width: 15vw;
+    width: 19vw;
     border: #1071ff;
   }
 
@@ -452,21 +447,24 @@ h3 {
   }
 
   .name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: black;
-    min-height: 13.5vh;
+    padding: 0vh 0vw;
+    min-height: 5vh;
+    padding-right: 2vw;
   }
 
   .description {
     color: gray;
     font-weight: normal;
     text-align: left;
+    font-size: 1.2rem;
   }
   .desktop-only {
     display: block;
     color: rgb(61, 60, 60);
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: normal;
     margin-top: 0.5rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -477,20 +475,21 @@ h3 {
   }
   .productsAlign {
     display: flex;
-    gap: 48vw;
-    max-width: 80vw;
+    gap: 57vw;
+    max-width: 90vw;
   }
   .cartAdded {
     background-color: #e6effb;
-
+    font-size: 1.5rem;
     display: inline-flex;
     gap: 0.5vw;
     align-items: center;
     justify-content: center;
     justify-self: center;
     font-weight: normal;
-    width: 15vw;
-    height: 5vh;
+    width: 20vw;
+    height: 7vh;
+    color: #1071ff;
   }
   .showBig {
     max-width: 10vw;

@@ -1,13 +1,19 @@
 .signUp {
-  margin: 1rem;
+  margin: 3vw;
+  margin-top: 3vh;
   background-color: #f6f8fb;
 }
 .signUpDescription {
   margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.newsletterH3 {
+  padding-top: 3vh;
+  margin-left: -2vw;
 }
 
 .input {
-  border: 0.1rem solid rgb(201, 200, 200);
+  border: 0.1rem solid rgb(238, 237, 237);
   border-radius: 0.3rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -17,9 +23,9 @@
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
-  background-color: rgba(34, 81, 236, 0.904);
-  border: rgba(34, 81, 236, 0.904);
-  border-radius: 1rem;
+  background-color: #1071ff;
+  border: #1071ff;
+  border-radius: 2rem;
   width: 100%;
   color: white;
   font-weight: bold;
@@ -31,8 +37,63 @@
   grid-template-columns: auto 1fr;
   align-items: baseline;
   gap: 1rem;
+  font-size: 0.9rem;
+  margin-left: 2vw;
 }
 
 .blue {
-  color: rgba(34, 81, 236, 0.904);
+  color: #1071ff;
+}
+
+@media screen and (min-width: 1025px) {
+  .signUp {
+    margin: 3vw;
+    width: 22vw;
+    margin-top: 3vh;
+    background-color: #f6f8fb;
+  }
+  .signUpDescription {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    margin-top: -5vh;
+    margin-left: 0.5vw;
+  }
+  .newsletterH3 {
+    padding-top: 0vh;
+    margin-left: 0;
+  }
+
+  .input {
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .signupButton {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #1071ff;
+    border: #1071ff;
+    border-radius: 3rem;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .check {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2vw;
+  }
+
+  .blue {
+    color: #1071ff;
+  }
 }

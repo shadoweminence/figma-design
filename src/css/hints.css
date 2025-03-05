@@ -16,6 +16,11 @@
   color: black;
   margin-bottom: 2vh;
 }
+.expandHint {
+  font-size: 1.6rem;
+  padding-bottom: 1vh;
+}
+
 .hintName {
   margin-top: 0.5rem;
   font-weight: bold;
@@ -25,7 +30,9 @@
 .moreHints {
   margin-top: 0.2rem;
   display: flex;
-  color: rgba(34, 81, 236, 0.904);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #1071ff;
   gap: 0.2rem;
 }
 .hintImg {
@@ -72,13 +79,16 @@
     grid-template-columns: repeat(4, 21vw);
     margin-bottom: 1rem;
     gap: 2vw;
+    margin-top: 2vh;
   }
   .hintName {
     margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: bolder;
+    font-size: 2rem;
     min-height: 8vh;
     margin-bottom: 0.2rem;
+    padding-left: 0.5vw;
+    padding-right: 1.5vw;
   }
   .hintDescription {
     display: -webkit-box;
@@ -87,8 +97,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: black;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
   }
 
   .hintImg {
@@ -107,7 +119,21 @@
     display: flex;
     justify-content: right;
     align-items: right;
-    gap: 57vw;
-    max-width: 79vw;
+    gap: 60vw;
+    max-width: 80vw;
+  }
+  .expandHint {
+    font-size: 2.4rem;
+    padding-bottom: 1vh;
+  }
+  .moreHints {
+    margin-top: 0.2rem;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1071ff;
+    gap: 0.2rem;
+    padding-left: 0.5vw;
+    padding-right: 1.5vw;
   }
 }

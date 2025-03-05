@@ -150,28 +150,29 @@
   .bundleDescription {
     color: white;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
     display: flex;
     justify-self: left;
     margin-top: 1vh;
+    margin-left: 2vw;
   }
   .bundleDescription1 {
-    margin-left: 1rem;
+    margin-left: 2vw;
     font-size: 2rem;
     max-width: 25vw;
   }
   .buyBundle {
     display: flex;
     justify-self: left;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 2vh 2vw;
+    border-radius: 3rem;
     color: #1071ff;
     border: #1071ff;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }

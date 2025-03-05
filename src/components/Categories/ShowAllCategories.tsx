@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 
 import "../../css/showall.css";
 
@@ -8,7 +8,7 @@ export default function ShowAllCategories() {
     <div className="container">
       <div className="recommend">
         <p>Show all categories </p>
-        <FaArrowRight />
+        <FiArrowRight className="moreArrow" />
       </div>
       <div></div>
     </div>
