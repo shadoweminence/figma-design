@@ -7,7 +7,7 @@ const UserDetails: React.FC = () => {
     {
       name: "Username",
       surname: "Surname",
-      phone: "+ 32(0)15287667",
+      phone: "+32(0)15287667",
       messages: "Messages",
       options: "details,settings",
     },

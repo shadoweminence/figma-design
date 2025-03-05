@@ -266,15 +266,9 @@ h3 {
 }
 
 @media screen and (min-width: 1025px) {
-  .recommend {
-    margin-left: 0vw;
-    width: 99vw;
-    background-color: white;
-    padding-bottom: 1rem;
-  }
   .product-container {
     display: grid;
-    grid-template-columns: repeat(4, 19vw);
+    grid-template-columns: repeat(4, 20vw);
     gap: 3vw;
     overflow: hidden; /* Prevents manual scrolling */
     max-width: 95vw; /* Adjust width based on layout */
@@ -483,7 +477,7 @@ h3 {
   }
   .productsAlign {
     display: flex;
-    gap: 36vw;
+    gap: 48vw;
     max-width: 80vw;
   }
   .cartAdded {
@@ -497,5 +491,8 @@ h3 {
     font-weight: normal;
     width: 15vw;
     height: 5vh;
+  }
+  .showBig {
+    max-width: 10vw;
   }
 }

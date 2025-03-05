@@ -37,7 +37,7 @@ nav {
 .cart {
   font-size: 2rem;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 1.5vw;
   color: rgba(34, 81, 236, 0.904);
 }
 .badge {

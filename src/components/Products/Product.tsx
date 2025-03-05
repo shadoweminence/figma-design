@@ -6,7 +6,7 @@ import { TiTick } from "react-icons/ti";
 import { FaAngleDown, FaExclamationCircle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 
-import "../../css/Products/recommend.css";
+import "../../css/Products/product.css";
 import { addItems } from "../../redux/cart/cartSlice";
 import { RootState } from "../../redux/store";
 
@@ -43,7 +43,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
     );
   };
   return (
-    <div className="recommend">
+    <div className="productCard">
       <div className="product1">
         <img className="productImage" src={product.image} alt={product.alt} />
         <FaRegStar className="star" />

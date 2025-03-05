@@ -130,7 +130,7 @@ h3 {
   }
   .eventAlign {
     display: flex;
-    gap: 50vw;
-    max-width: 80vw;
+    gap: 60vw;
+    max-width: 90vw;
   }
 }

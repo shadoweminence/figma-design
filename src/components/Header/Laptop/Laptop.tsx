@@ -1,10 +1,11 @@
 import React from "react";
-import Navbar from "./Nav";
+
 import OptionList from "./OptionList";
 import Icons from "./Icons";
 import "../../../css/Header/laptop/nav.css";
 import TopItems from "./TopItems";
 import UserDetails from "./UserDetails";
+import MidNav from "./MidNav";
 
 const Laptop = () => {
   return (
@@ -14,7 +15,7 @@ const Laptop = () => {
         <UserDetails />
       </div>
       <div>
-        <Navbar />
+        <MidNav />
       </div>
 
       <div className="bigGrid">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import "../../css/Footer/dropdown.css";
+import "../../css/Footer/service.css";
 import useScreenSize from "../hooks/useScreenSize";
 
 interface Item {

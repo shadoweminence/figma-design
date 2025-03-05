@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 41vw;
 }
 
 h2 {
@@ -56,9 +57,12 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    width: 24.3vw;
+    width: 24vw;
     height: auto;
     object-fit: cover; /* Ensures the image scales properly */
+  }
+  .title {
+    width: 24vw;
   }
 }
 
@@ -75,15 +79,17 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 21vw;
+    width: 21vw;
     height: auto;
-    object-fit: contain; /* Ensures the image scales properly */
+    object-fit: cover; /* Ensures the image scales properly */
+  }
+  .title {
+    width: 21vw;
   }
 
   .categoryAlign {
     display: flex;
-    gap: 36vw;
+    gap: 48vw;
     max-width: 80vw;
   }
 }

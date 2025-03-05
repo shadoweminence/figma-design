@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Footer/signUp.css";
+import "../../css/Footer/newsletter.css";
 
 export default function NewsLetter() {
   return (

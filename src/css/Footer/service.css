@@ -7,6 +7,7 @@
 
 .drop {
   display: flex;
+
   justify-content: space-between;
   gap: 60vw;
   align-items: center;

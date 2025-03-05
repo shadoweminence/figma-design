@@ -26,7 +26,11 @@ const User: React.FC<UserProps> = ({ user }) => {
       <div>
         <p className="number components">
           <MdOutlinePhoneEnabled />
-          {user.phone}
+          {user.phone.replace(
+            /(\+\d{2})\((\d)\)(\d+)/,
+            (_, countryCode, zero, num) =>
+              `${countryCode} (${zero}) ${num.replace(/\d{2}(?=\d)/g, "$& ")}`
+          )}
         </p>
       </div>
       <p>|</p>

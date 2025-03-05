@@ -22,7 +22,7 @@
 }
 .search-icons {
   position: absolute;
-  left: 35vw;
+  left: 36.5vw;
   font-size: 1rem;
   color: #1071ff;
 }
@@ -204,7 +204,9 @@
   margin-right: 0.5vw;
   font-size: 1.4rem;
 }
-
+.user {
+  margin-right: 0.5vw;
+}
 .userName {
   font-size: 1.2rem;
 }

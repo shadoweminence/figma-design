@@ -5,7 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import companyLogo from "../../../assets/logotype.png";
 import "../../../css/Header/laptop/nav.css";
 
-function Navbar() {
+function MidNav() {
   return (
     <nav className="headNav">
       <div className="logo">
@@ -24,4 +24,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default MidNav;
