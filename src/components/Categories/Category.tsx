@@ -24,7 +24,7 @@ const Category: React.FC<CategoryProps> = ({ category }) => {
               <img src={category.image} alt={category.alt} />
             </div>
 
-            <p className="title">{category.name}</p>
+            <h5 className="title">{category.name}</h5>
           </div>
         </div>
       </div>

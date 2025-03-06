@@ -28,6 +28,14 @@
 .moreArrow {
   font-size: 1.3rem;
 }
+@media screen and (min-width: 768px) {
+  .recommend {
+    font-size: 2rem;
+  }
+  .moreArrow {
+    font-size: 3rem;
+  }
+}
 
 @media screen and (min-width: 1025px) {
   .container {
@@ -38,10 +46,13 @@
 
   .recommend {
     color: rgba(34, 81, 236, 0.904);
-    font-size: 1.2rem;
+    font-size: 0.9vw;
     font-weight: bold;
 
     max-width: 30vw;
-    width: 15vw;
+    width: 18vw;
+  }
+  .moreArrow {
+    font-size: 2rem;
   }
 }

@@ -4,7 +4,8 @@ import Logos from "./Logos";
 import "../../css/Footer/footer.css";
 
 import NewsLetter from "./NewsLetter";
-import Services from "./Services";
+
+import Utils from "./Utils";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
         </div>
 
         <div className="drop">
-          <Services />
+          <Utils />
         </div>
       </div>
 

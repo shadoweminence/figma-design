@@ -1,7 +1,9 @@
 .productCard {
   background-color: white;
   padding-bottom: 1rem;
-  margin-left: 5vw;
+  margin-left: 3vw;
+  width: 45vw;
+  line-height: 1.2;
 }
 h2 {
   text-align: center;
@@ -10,7 +12,7 @@ h2 {
 .product-container {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  gap: 0.5vw;
+  gap: 1vw;
   overflow: hidden; /* Prevents manual scrolling */
   max-width: 95vw; /* Adjust width based on layout */
   margin-left: 2vw;
@@ -24,6 +26,10 @@ h2 {
   position: absolute;
   bottom: 5vh;
   right: 5%;
+  background-color: #e6effb;
+  padding: 0 1vw;
+  padding-top: 0.5vh;
+  font-size: 2rem;
 }
 
 button:hover {
@@ -178,13 +184,15 @@ button:hover {
 }
 
 .name {
+  margin-top: 0;
   color: black;
-  min-height: 4rem;
-  font-size: 1rem;
-  font-family: "Basier Circle";
+  min-height: 5vh;
+  font-size: 0.8rem;
+  font-family: "BasierCircle";
 }
 
 .description {
+  padding-left: 2vw;
   color: gray;
   text-align: left;
   font-size: 0.8rem;
@@ -211,8 +219,9 @@ h3 {
 }
 .cartAdded {
   background-color: #e6effb;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-left: 5vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,18 +242,83 @@ h3 {
   }
 
   .addCart {
-    font-size: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
     padding: 0.8rem;
+    margin: 0.2rem;
+    background-color: #1071ff;
+    color: white;
+    border-radius: 200px;
+    width: 95%;
+    border: rgba(34, 81, 236, 0.904);
   }
 
-  .btn,
-  .item {
-    font-size: 1rem;
-    padding: 1rem;
-  }
   .name {
     color: black;
     min-height: 7rem;
+    font-size: 1.5rem;
+  }
+
+  .badge1 {
+    position: absolute;
+    border: 1 thin;
+    top: 1vh;
+    left: 0rem;
+    color: white;
+    padding: 0.2rem;
+    background-color: #ff7e27;
+    font-size: 1.2rem;
+  }
+
+  .star {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    color: #1071ff;
+    padding: 0.2rem 0.2rem;
+    border-radius: 50%;
+    background-color: #e6effb;
+    font-size: 2rem;
+  }
+
+  .compare {
+    position: absolute;
+    top: 15vh;
+    right: 2vw;
+    width: 4vw;
+  }
+
+  .share {
+    position: absolute;
+    top: 20vh;
+    right: 2vw;
+    color: #1071ff;
+    font-size: 2rem;
+  }
+
+  .stock {
+    color: green;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 0.1rem;
+    font-weight: normal;
+    margin-bottom: 0.1rem;
+    margin-left: 2vw;
+  }
+  .noStock {
+    color: red;
+    font-weight: normal;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 2vw;
+  }
+  .tick {
+    border-radius: 1rem;
+    border: 0.1rem solid green;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
   }
 
   .dollars {
@@ -252,16 +326,77 @@ h3 {
   }
 
   .cut {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
+  .description {
+    color: gray;
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 2vw;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    padding-left: 2vw;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border: 0.1rem solid rgb(221, 218, 218);
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    width: 12vw;
+    margin-left: 2vw;
+  }
+  .select-container {
+    margin-left: 1vw;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    align-items: center;
+    border: 0.1rem solid rgb(221, 218, 218);
+    border-radius: 5px;
+    padding-right: 1rem;
+  }
+
+  .item {
+    font-size: 1.5rem;
+    width: 10vw;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    margin-left: 3vw;
+  }
+
+  .rec {
+    position: relative;
+    margin-top: -3vh;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 5vh;
+    right: 5%;
+  }
   .desktop-only {
     display: block;
     color: rgb(61, 60, 60);
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    padding-left: 2vw;
+    font-family: "BasierSquare";
+  }
+
+  .cartAdded {
+    background-color: #e6effb;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 2rem;
+    padding-left: 4vw;
   }
 }
 
@@ -272,35 +407,33 @@ h3 {
     gap: 3vw;
     overflow: hidden; /* Prevents manual scrolling */
     max-width: 95vw; /* Adjust width based on layout */
-    margin-left: -3vw;
+    margin-left: -2vw;
   }
   .productCard {
     margin-top: 2vh;
     width: 20vw;
   }
-  h2 {
-    padding-top: 5vh;
-  }
+
   .product1 {
     width: 20vw;
     height: auto;
   }
   .productDescription {
-    padding: 1rem;
+    padding: 1vw;
   }
 
   .rec {
     position: relative;
   }
   .button-container {
-    margin-top: 11vh;
     position: absolute;
-    top: 45vh;
-    right: 5vw;
-  }
-  .iconRight {
+    bottom: 42vh;
+    right: 8%;
+
+    padding: 0 0.5vw;
+    padding-top: 1vh;
+    font-size: 2rem;
     background-color: #e6effb;
-    font-size: 3rem;
   }
 
   .productImage {
@@ -312,84 +445,92 @@ h3 {
     position: absolute;
     border: 1 thin;
     top: 4vh;
-    left: 0rem;
+    left: 0;
     color: white;
     padding: 0.2rem;
     background-color: #ff7e27;
-    font-size: 1rem;
+    font-size: 1vw;
   }
 
   .star {
     position: absolute;
-    top: 3rem;
-    right: 1rem;
+    top: 4vh;
+    right: 1vw;
     color: #1071ff;
     padding: 0.2rem 0.2rem;
     border-radius: 50%;
     background-color: #e6effb;
-    font-size: 2rem;
+    font-size: 1.5vw;
   }
 
   .compare {
     position: absolute;
     height: 3vh;
-    top: 25vh;
-    right: 1rem;
+    top: 27vh;
+    right: 1vw;
+    width: 1.5vw;
   }
 
   .share {
     position: absolute;
-    font-size: 2rem;
-    top: 30vh;
-    right: 1rem;
+    font-size: 1.5vw;
+    top: 31vh;
+    right: 1vw;
     color: #1071ff;
   }
 
   .stock {
     color: green;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: normal;
     position: absolute;
     top: 31vh;
+    margin-left: 0.5vw;
 
-    padding: 0.5vh 1vw;
+    padding: 0vh 1vw;
     border: 1px solid rgb(238, 238, 238);
   }
   .noStock {
     color: red;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: normal;
     display: flex;
     padding: 0.1rem;
     margin-bottom: 0vh;
-    margin-left: 0.1rem;
+    margin-left: 0;
   }
 
   .tick {
     border-radius: 1rem;
     border: 0.1rem solid green;
-    margin-right: 0.1rem;
-    margin-left: 0.1rem;
-  }
+    margin-right: 0.2vw;
+    margin-left: -0.5vw;
 
-  .part {
-    color: gray;
+    margin-top: 0.5vh;
+  }
+  .exclamation {
+    margin-right: 0.2vw;
+    margin-left: -0.5vw;
+
+    margin-top: 0.5vh;
   }
 
   .price {
     color: #1071ff;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1vw;
+    padding-left: 0;
+    margin-top: 2vh;
   }
   .dollars {
-    font-size: 2rem;
+    font-size: 1.6vw;
   }
 
   .cut {
     text-decoration: line-through;
     color: orange;
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1vw;
   }
 
   .quantity {
@@ -397,12 +538,13 @@ h3 {
     padding: 0 1rem;
   }
   .btn {
-    font-size: 1rem;
+    font-size: 1vw;
     width: 15vw;
     padding: 1.5rem;
     background-color: white;
     border: 0.1rem solid rgb(216, 215, 215);
     border-radius: 0.5rem;
+    margin-left: 0;
   }
   .select-container {
     margin-left: 0.5vw;
@@ -416,21 +558,22 @@ h3 {
   }
 
   .item {
-    font-size: 1rem;
+    font-size: 1vw;
     width: 10vw;
     background-color: white;
     color: black;
     font-weight: normal;
     margin: 0.1rem;
+    padding-left: 1vw;
   }
 
   .icon {
     color: #1071ff;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
   }
 
   .addCart {
-    font-size: 1.8rem;
+    font-size: 1.4vw;
     text-align: center;
     padding: 2vh 4vw;
     margin: 1vh 0.5vw;
@@ -447,10 +590,11 @@ h3 {
   }
 
   .name {
-    font-size: 1.8rem;
+    margin-top: 1vh;
+    font-size: 1.4vw;
     color: black;
     padding: 0vh 0vw;
-    min-height: 5vh;
+    min-height: 8vh;
     padding-right: 2vw;
   }
 
@@ -458,16 +602,18 @@ h3 {
     color: gray;
     font-weight: normal;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1vw;
+    padding-left: 0;
   }
   .desktop-only {
     display: block;
     color: rgb(61, 60, 60);
     text-align: left;
-    font-size: 1.3rem;
-    font-weight: normal;
-    margin-top: 0.5rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1vw;
+    line-height: 1.8;
+    font-weight: bold;
+    padding-left: 0;
+    font-family: "BasierSquare";
   }
 
   h3 {
@@ -475,12 +621,12 @@ h3 {
   }
   .productsAlign {
     display: flex;
-    gap: 57vw;
+    gap: 50vw;
     max-width: 90vw;
   }
   .cartAdded {
     background-color: #e6effb;
-    font-size: 1.5rem;
+    font-size: 1vw;
     display: inline-flex;
     gap: 0.5vw;
     align-items: center;

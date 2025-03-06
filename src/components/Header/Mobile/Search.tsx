@@ -7,7 +7,11 @@ export default function Search() {
   return (
     <div className="search-container">
       <IoSearch className="search-icon" />
-      <input type="text" placeholder="Search by product or SKU" />
+      <input
+        className="mobileSearchInput"
+        type="text"
+        placeholder="Search by product or SKU"
+      />
     </div>
   );
 }

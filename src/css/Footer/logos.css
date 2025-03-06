@@ -88,24 +88,32 @@
     flex: 1;
     order: 1;
     text-align: left;
-    font-size: 1rem;
-    color: grey;
+    font-size: 1vw;
+    color: rgb(87, 86, 86);
 
+    margin-top: 2vh;
     padding-left: 5vw;
-    margin-bottom: 1rem;
+    margin-bottom: 6vh;
   }
-
+  .copy {
+    font-size: 1.6vw;
+    color: black;
+    margin-right: 0.5vw;
+  }
   .logo1 {
     order: 3;
     padding-right: 6vw;
   }
   .logo1 img {
-    margin-top: 1rem;
+    margin-top: -1vh;
     padding: 0.2rem;
+    width: 13vw;
+    height: 4vh;
   }
   .social {
     order: 2;
-    margin-top: 2vh;
+    margin-top: -1vh;
     padding: 0.2rem;
+    font-size: 1.8vw;
   }
 }

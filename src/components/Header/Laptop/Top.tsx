@@ -25,19 +25,21 @@ const Top: React.FC<TopProps> = ({ top }) => {
   return (
     <div>
       <div className="navDrop" onClick={handleDrop}>
-        <p className={isDropped ? "active" : ""}>
+        <p className={isDropped ? "active country" : "country"}>
           {top.title}: {selectedOption}
           {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
         </p>
       </div>
 
       {isDropped && (
-        <div>
-          {top.dropOptions.map((option, index) => (
-            <p key={index} onClick={() => handleSelectOption(option)}>
-              {option}
-            </p>
-          ))}
+        <div className="navDropdown">
+          <ul>
+            {top.dropOptions.map((option, index) => (
+              <li key={index} onClick={() => handleSelectOption(option)}>
+                {option}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

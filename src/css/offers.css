@@ -12,21 +12,19 @@
 
   padding-top: 1.5rem;
   padding-bottom: 1.8rem;
-  font-size: 2.2rem;
+
   color: white;
   font-weight: bold;
 }
 
-.img {
-  margin-bottom: 1vh;
-}
 .discount {
-  font-size: 3rem;
+  font-size: 4rem;
 
   margin-top: -2vh;
 }
 .offerName {
   margin-bottom: 2vh;
+  font-size: 3rem;
 }
 .offerBtn {
   background-color: white;
@@ -43,7 +41,7 @@
     display: flex;
     /* Aligns items in a row */
     height: 40vh;
-    width: 98vw;
+    width: 100vw;
     text-align: left;
     background-color: #2580ff;
 
@@ -97,24 +95,24 @@
   }
 
   .discount {
-    font-size: 8rem;
+    font-size: 7vw;
     margin-left: 1vw;
   }
   .offerName {
-    font-size: 5rem;
-    margin-left: 2vw;
+    font-size: 4vw;
+    margin-left: 1.5vw;
   }
 
   .offerBtn {
     background-color: white;
     color: #2580ff;
-    border-radius: 3rem;
+    border-radius: 3vw;
     padding: 2vh 2.5vw;
     border: none;
     display: flex;
     font-weight: bold;
-    margin-left: 22vw;
+    margin-left: 18vw;
 
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }

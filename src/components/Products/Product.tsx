@@ -56,7 +56,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             </>
           ) : (
             <p className="noStock">
-              <FaExclamationCircle />
+              <FaExclamationCircle className="exclamation" />
               Exp. Delivery on Jun14,2022
             </p>
           )}

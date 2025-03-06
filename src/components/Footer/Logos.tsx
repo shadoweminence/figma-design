@@ -19,7 +19,10 @@ const Logos = () => {
         <img src={logo} alt="" />
       </div>
 
-      <div className="copyright">&#169; 2021 Divante S.A.</div>
+      <div className="copyright">
+        <span className="copy">&#169;</span>
+        2021 Divante S.A.
+      </div>
     </div>
   );
 };

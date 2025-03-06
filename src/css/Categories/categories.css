@@ -47,7 +47,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25vw, 0fr));
+    grid-template-columns: repeat(auto-fit, minmax(45vw, 0fr));
     margin-left: 2vw;
     column-gap: 1 vw;
   }
@@ -57,12 +57,13 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    width: 24vw;
+    width: 43vw;
     height: auto;
     object-fit: cover; /* Ensures the image scales properly */
   }
   .title {
-    width: 24vw;
+    width: 43vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -72,7 +73,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(21vw, 0fr));
 
     gap: 2vw;
-    margin-left: 1rem;
+    margin-left: 0.5vw;
     margin-bottom: 5vh;
     margin-top: 2vh;
   }
@@ -81,20 +82,24 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 21vw;
+    width: 20vw;
     height: auto;
     object-fit: cover; /* Ensures the image scales properly */
   }
   .title {
-    width: 21vw;
-    font-size: 2rem;
+    width: 20vw;
+    font-size: 1.3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    font-weight: bold;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
   }
 
   .categoryAlign {
     display: flex;
-    gap: 57vw;
+    gap: 52vw;
     max-width: 90vw;
   }
 }

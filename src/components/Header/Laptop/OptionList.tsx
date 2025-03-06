@@ -5,11 +5,20 @@ const OptionList: React.FC = () => {
   const navs = [
     {
       title: "Home & Garden",
-      options: "home,garden",
+      options: [
+        "home",
+        "garden",
+        "Motor parts",
+        "other parts",
+        "Motor parts",
+        "other parts",
+        "Motor parts",
+        "other parts",
+      ],
     },
     {
       title: "Motors",
-      options: "Motor parts, other parts",
+      options: ["Motor parts", "other parts"],
     },
     {
       title: "Electronics",

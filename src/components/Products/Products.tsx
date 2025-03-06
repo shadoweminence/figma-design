@@ -94,16 +94,14 @@ const Products: React.FC = () => {
           </div>
 
           {/* Buttons for scrolling */}
-          <div className="button-container">
-            <button onClick={handleNext}>
-              {" "}
-              <GoChevronRight className="iconRight" />
-            </button>
+
+          <div className="button-container" onClick={handleNext}>
+            <GoChevronRight className="iconRight" />
           </div>
         </>
       ) : (
         <>
-          <h2>Recommended Products</h2>
+          <h2 className="recommendH2">Recommended Products</h2>
           <div className="showBig">
             <ShowAll />
           </div>
@@ -117,11 +115,10 @@ const Products: React.FC = () => {
           </div>
 
           {/* Buttons for scrolling */}
-          <div className="button-container">
-            <button onClick={handleNext}>
-              {" "}
-              <GoChevronRight className="iconRight" />
-            </button>
+
+          <div className="button-container" onClick={handleNext}>
+            {" "}
+            <GoChevronRight className="iconRight" />
           </div>
         </>
       )}

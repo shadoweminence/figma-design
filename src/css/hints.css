@@ -26,6 +26,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
+  font-family: "BasierCircle";
 }
 .moreHints {
   margin-top: 0.2rem;
@@ -74,19 +75,19 @@
 
 @media screen and (min-width: 1025px) {
   .hints {
-    margin-left: 1.8rem;
+    margin-left: 0.5vw;
     display: grid;
     grid-template-columns: repeat(4, 21vw);
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
     gap: 2vw;
     margin-top: 2vh;
   }
   .hintName {
     margin-top: 0.5rem;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.4vw;
     min-height: 8vh;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1vh;
     padding-left: 0.5vw;
     padding-right: 1.5vw;
   }
@@ -97,7 +98,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.6rem;
+    font-size: 1.13vw;
     color: black;
     padding-left: 0.5vw;
     padding-right: 1vw;
@@ -111,7 +112,7 @@
 
   .hintImg img {
     width: 21vw;
-    max-width: 21vw;
+    max-width: 20vw;
     height: auto;
     object-fit: contain; /* Ensures the image scales properly */
   }
@@ -119,17 +120,17 @@
     display: flex;
     justify-content: right;
     align-items: right;
-    gap: 60vw;
-    max-width: 80vw;
+    gap: 64vw;
+    max-width: 87vw;
   }
   .expandHint {
-    font-size: 2.4rem;
+    font-size: 1.8vw;
     padding-bottom: 1vh;
   }
   .moreHints {
     margin-top: 0.2rem;
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1vw;
     font-weight: bold;
     color: #1071ff;
     gap: 0.2rem;

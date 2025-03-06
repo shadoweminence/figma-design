@@ -22,27 +22,28 @@
 }
 input {
   width: 100%;
-  padding: 1vh 3vw;
+  padding: 2vh 3vw;
   border: 0.1rem solid white;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 .search-icons {
   position: absolute;
   left: 30vw;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: #1071ff;
 }
 .quickOrder {
   background-color: #1071ff;
   padding: 0.6rem;
   color: white;
-  border-radius: 2rem;
+  border-radius: 3rem;
   margin: 0.6rem;
   border: #1071ff;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+
   padding: 2vh 2vw;
-  margin-right: 8vw;
+  margin-right: 6vw;
 }
 .searchItem {
   font-size: 1.5rem;
@@ -62,6 +63,9 @@ input {
   background-color: #f6f8fb;
   padding: 1.5rem;
 }
+.country {
+  font-size: 1vw;
+}
 
 .navTitles {
   margin-left: 2vw;
@@ -71,7 +75,7 @@ input {
 .navNoOptions {
   margin-top: 1vh;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1vw;
 }
 
 .navDrop {
@@ -107,7 +111,7 @@ input {
   display: flex;
   margin-left: 3.5vw;
   margin-top: -1vh;
-  font-size: 1.5rem;
+  font-size: 1vw;
   align-items: center;
   justify-content: center;
   height: 4vh;
@@ -117,7 +121,7 @@ input {
 .navCart {
   height: 4vh;
   margin-top: -1vh;
-  font-size: 1.5rem;
+  font-size: 1vw;
   position: relative;
   margin-left: 2vw;
   color: #1071ff;
@@ -125,7 +129,7 @@ input {
 .topics {
   position: absolute;
 
-  top: 3.2rem;
+  top: 4.2vh;
   color: #1071ff;
   display: flex;
 
@@ -136,11 +140,11 @@ input {
   margin-left: 1.5vw;
   margin-top: -2vh;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.8vw;
 }
 
 .topicss {
-  font-size: 1rem;
+  font-size: 0.6vw;
   color: #1071ff;
   display: flex;
   align-items: let;
@@ -154,13 +158,13 @@ input {
   margin-left: 3.8vw;
   color: white;
   position: relative;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 50%;
   background-color: #ff4e00;
-  font-size: 0.8rem;
+  font-size: 0.6vw;
   align-self: center;
   font-weight: bold;
-  top: -4vh;
+  top: -3vh;
 }
 
 .starValue {
@@ -168,31 +172,61 @@ input {
   top: -4vh;
   margin-left: 4vw;
   color: white;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 50%;
   background-color: #ff4e00;
-  font-size: 0.8rem;
+  font-size: 0.6vw;
   font-weight: bold;
 }
 
 .cartValue {
   position: absolute;
   top: -1vh;
-  right: 1.9vw;
+  right: 1.5vw;
   margin-left: 3vw;
   color: white;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 50%;
   background-color: #ff4e00;
-  font-size: 0.8rem;
+  font-size: 0.6vw;
   font-weight: bold;
   align-self: center;
 }
 
+ul {
+  list-style: none;
+}
+
+.navOptionsDropdown {
+  position: absolute;
+  top: 60%;
+
+  width: 9vw;
+  font-size: 1.2rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* css for the country and language dropdown  */
+.navDropdown {
+  position: absolute;
+  top: 70%;
+
+  width: 9vw;
+  font-size: 1.2rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
 /* from here the css for right corner of top nav starts i.e. user values  */
 .userTitles {
   display: flex;
-  gap: 1vw;
+  gap: 1.5vw;
 }
 
 .bigGridd {
@@ -200,7 +234,7 @@ input {
   display: flex;
   background-color: #f6f8fb;
   max-width: 98vw;
-  gap: 26vw;
+  gap: 22vw;
   padding: 0.6rem;
   position: relative;
 }
@@ -213,26 +247,26 @@ input {
 }
 
 .distributer {
-  font-size: 1.5rem;
+  font-size: 1vw;
 }
 .number {
   color: #1071ff;
   margin-top: 0vh;
-  font-size: 1.4rem;
+  font-size: 0.9vw;
   font-weight: bold;
 }
 .messages {
-  font-size: 2rem;
+  font-size: 1.4vw;
 }
 .userIconAlign {
   display: flex;
   gap: 0.5vw;
-  font-size: 1.6rem;
+  font-size: 1.1vw;
 }
 
 .user {
   margin-top: 0.1vh;
-  font-size: 1.8rem;
+  font-size: 1.2vw;
 }
 .messageValue {
   position: absolute;

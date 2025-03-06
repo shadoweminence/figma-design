@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import "../../css/Footer/service.css";
+import "../../css/Footer/utils.css";
 import useScreenSize from "../hooks/useScreenSize";
 
 interface Item {
   title: string;
-  options: string;
+  options: string[];
 }
 
 interface ItemProps {
   item: Item;
 }
 
-const Service: React.FC<ItemProps> = ({ item }) => {
+const Util: React.FC<ItemProps> = ({ item }) => {
   const [isDropped, setIsDropped] = useState(false);
   const isLaptop = useScreenSize();
 
@@ -28,13 +28,9 @@ const Service: React.FC<ItemProps> = ({ item }) => {
             <h4>{item.title}</h4>
             <div className="items">
               <ul>
-                <li>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: item.options.replace(/,/g, "<br />"),
-                    }}
-                  />
-                </li>
+                {item.options.map((option, index) => (
+                  <li key={index}>{option}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -50,14 +46,9 @@ const Service: React.FC<ItemProps> = ({ item }) => {
             {isDropped && (
               <div className="items">
                 <ul>
-                  <li>
-                    {" "}
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: item.options.replace(/,/g, "<br />"),
-                      }}
-                    />
-                  </li>
+                  {item.options.map((option, index) => (
+                    <li key={index}>{option}</li>
+                  ))}
                 </ul>
               </div>
             )}
@@ -68,4 +59,4 @@ const Service: React.FC<ItemProps> = ({ item }) => {
   );
 };
 
-export default Service;
+export default Util;
