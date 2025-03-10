@@ -23,19 +23,20 @@ const User: React.FC<UserProps> = ({ user }) => {
 
   return (
     <div className="userTitles">
-      <div>
-        <p className="number components">
-          <MdOutlinePhoneEnabled />
+      <div className="number ">
+        <MdOutlinePhoneEnabled className="numberIcon" />
+        <div className="numberSize">
           {user.phone.replace(
             /(\+\d{2})\((\d)\)(\d+)/,
             (_, countryCode, zero, num) =>
               `${countryCode} (${zero}) ${num.replace(/\d{2}(?=\d)/g, "$& ")}`
           )}
-        </p>
+        </div>
       </div>
+
       <p className="distributer">|</p>
       <div>
-        <div className=" userIconAlign">
+        <div className=" userMessageAlign">
           <p>
             <MdMailOutline className="messages" />
           </p>
@@ -53,7 +54,10 @@ const User: React.FC<UserProps> = ({ user }) => {
             <p>
               <FaRegUserCircle className="user" />
             </p>
-            {user.name} {user.surname}
+            <div className="userNames">
+              {" "}
+              {user.name} {user.surname}
+            </div>
             {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
           </div>
         </div>

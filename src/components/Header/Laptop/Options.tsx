@@ -18,11 +18,16 @@ const Options: React.FC<NavOptionProps> = ({ nav }) => {
   };
   return (
     <div>
-      <div className="navTitles">
+      <div>
         {nav.options ? (
           <div>
             <div className="navDrop" onClick={handleDrop}>
-              <h4 className={isDropped ? "active" : ""}> {nav.title}</h4>
+              <h4
+                className={isDropped ? "active serviceTitle" : "serviceTitle"}
+              >
+                {" "}
+                {nav.title}
+              </h4>
               {isDropped ? (
                 <FaAngleUp className="optionsDrop" />
               ) : (
@@ -41,7 +46,7 @@ const Options: React.FC<NavOptionProps> = ({ nav }) => {
             )}
           </div>
         ) : (
-          <div className="navTitles navNoOptions">
+          <div className="navTitles serviceTitle">
             <div>{nav.title}</div>
           </div>
         )}

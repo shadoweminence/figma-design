@@ -1,12 +1,15 @@
 import React from "react";
-import Navbar from "./Nav";
+
 import Search from "./Search";
+
+import OptionList from "../Laptop/OptionList";
+import "../../../css/Header/mobile/nav.css";
 
 const Mobile = () => {
   return (
     <div>
-      <div>
-        <Navbar />
+      <div className="smallGrid">
+        <OptionList />
       </div>
       <div>
         <Search />

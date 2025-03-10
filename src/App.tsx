@@ -1,32 +1,19 @@
 import "./App.css";
-import DPD from "./components/DPD";
+import "./index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Offers from "./components/Offer/Offers";
-
-import Footer from "./components/Footer/Footer";
-
-import Header from "./components/Header/Header";
-import Ads from "./components/Ads/Ads";
-import Bundles from "./components/Bundle/Bundles";
-import Products from "./components/Products/Products";
-import Categories from "./components/Categories/Categories";
-import Events from "./components/Events/Events";
-import Hints from "./components/Hints/Hints";
+import Electronics from "./components/pages/Electronics";
+import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Products />
-      <Offers />
-      <Categories />
-      <Hints />
-      <Bundles />
-      <Ads />
-      <DPD />
-      <Events />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+
+        <Route path="/pages/electronics" element={<Electronics />} />
+      </Routes>
+    </Router>
   );
 }
 

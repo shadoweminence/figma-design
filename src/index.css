@@ -1,15 +1,21 @@
 @font-face {
   font-family: "BasierSquare";
-  src: url("/fonts/BasierSquare-Bold.woff") format("woff");
+  src: url("/fonts/Basier/BasierSquare/basiersquare-regular-webfont.woff2")
+      format("woff2"),
+    url("/fonts/Basier/BasierSquare/basiersquare-regular-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "BasierCircle";
-  src: url("/fonts/BasierCircle-Bolder.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Basier";
+  src: url("/fonts/Basier/BasierCircle/basiercircle-regular-webfont.woff")
+      format("woff"),
+    url("/fonts/Basier/BasierCircle/basiercircle-regular-webfont.woff2")
+      format("woff2"),
+    url("/fonts/Basier/BasierCircle/basiercircle-regular-webfont.ttf")
+      format("truetype");
 }
 
 html {
@@ -19,7 +25,7 @@ html {
 body {
   background-color: rgb(255, 251, 251);
   line-height: 1.5;
-  font-family: "BasierSquare";
+  font-family: "BasierSquare", sans-serif;
 }
 
 h3,

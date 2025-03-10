@@ -76,6 +76,8 @@ button:hover {
   position: absolute;
   top: 15vh;
   right: 2vw;
+  height: 2.5vh;
+  width: 3.4vw;
 }
 
 .share {
@@ -457,7 +459,7 @@ h3 {
     top: 4vh;
     right: 1vw;
     color: #1071ff;
-    padding: 0.2rem 0.2rem;
+    padding: 0.4rem 0.2rem;
     border-radius: 50%;
     background-color: #e6effb;
     font-size: 1.5vw;
@@ -468,7 +470,7 @@ h3 {
     height: 3vh;
     top: 27vh;
     right: 1vw;
-    width: 1.5vw;
+    width: 1.3vw;
   }
 
   .share {
@@ -594,6 +596,7 @@ h3 {
     font-size: 1.4vw;
     color: black;
     padding: 0vh 0vw;
+    font-weight: bolder;
     min-height: 8vh;
     padding-right: 2vw;
   }

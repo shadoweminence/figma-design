@@ -1,7 +1,10 @@
 import React from "react";
 import Options from "./Options";
+import useScreenSize from "../../hooks/useScreenSize";
+import Hamburger from "../Mobile/Hamburger";
 
 const OptionList: React.FC = () => {
+  const isLaptop = useScreenSize();
   const navs = [
     {
       title: "Home & Garden",
@@ -30,13 +33,15 @@ const OptionList: React.FC = () => {
 
   return (
     <div>
-      <div>
+      {isLaptop ? (
         <div className="navTitles">
           {navs.map((nav, index) => (
             <Options key={index} nav={nav} />
           ))}
         </div>
-      </div>
+      ) : (
+        <Hamburger navs={navs} />
+      )}
     </div>
   );
 };

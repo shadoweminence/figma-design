@@ -68,9 +68,8 @@
     padding-bottom: 1vh;
     background-color: white;
     width: 21vw;
-  }
-  input::placeholder {
-    font-size: 1vw; /* Increase placeholder size */
+    font-size: 1.5rem;
+    padding-left: 1vw;
   }
 
   input[type="checkbox"] {

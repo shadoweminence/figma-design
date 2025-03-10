@@ -25,11 +25,12 @@ input {
   padding: 2vh 3vw;
   border: 0.1rem solid white;
   border-radius: 5px;
+  position: relative;
   font-size: 0.5rem;
 }
 .search-icons {
-  position: absolute;
-  left: 30vw;
+  position: relative;
+  left: 0.2vw;
   font-size: 1.9rem;
   color: #1071ff;
 }
@@ -53,11 +54,11 @@ input {
 
 /* remaining css for headers like bottom nav,*/
 .bigGrid {
-  margin-left: -3vw;
   width: 99vw;
   display: flex;
+  margin-left: -3vw;
 
-  gap: 22vw;
+  gap: 28vw;
 
   position: relative;
   background-color: #f6f8fb;
@@ -68,7 +69,7 @@ input {
 }
 
 .navTitles {
-  margin-left: 2vw;
+  margin-left: 4vw;
   display: flex;
   gap: 1vw;
 }
@@ -228,13 +229,16 @@ ul {
   display: flex;
   gap: 1.5vw;
 }
+.userMessageAlign {
+  display: flex;
+}
 
 .bigGridd {
   margin-left: -3.5vw;
   display: flex;
   background-color: #f6f8fb;
   max-width: 98vw;
-  gap: 22vw;
+  gap: 27vw;
   padding: 0.6rem;
   position: relative;
 }
@@ -250,6 +254,7 @@ ul {
   font-size: 1vw;
 }
 .number {
+  display: flex;
   color: #1071ff;
   margin-top: 0vh;
   font-size: 0.9vw;
@@ -261,6 +266,7 @@ ul {
 .userIconAlign {
   display: flex;
   gap: 0.5vw;
+
   font-size: 1.1vw;
 }
 

@@ -1,24 +1,18 @@
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+
 import { MdOutlineShoppingCart } from "react-icons/md";
 import "../../../css/Header/mobile/nav.css";
 import companyLogo from "../../../assets/logotype.png";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav>
-      <div className="nav-left">
-        <div className="ham">
-          <RxHamburgerMenu />
-        </div>
-      </div>
-
-      {/* Centered logo */}
+      {/* Centered Logo */}
       <div className="mobNavLogo">
         <img src={companyLogo} alt="logo" />
       </div>
 
-      {/* Right section with cart */}
+      {/* Right Section */}
       <div className="nav-right">
         <div className="cart">
           <MdOutlineShoppingCart />
@@ -27,6 +21,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

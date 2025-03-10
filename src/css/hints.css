@@ -98,10 +98,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.13vw;
+    font-size: 1.3vw;
     color: black;
     padding-left: 0.5vw;
-    padding-right: 1vw;
+    padding-right: 1.5vw;
   }
 
   .hintImg {

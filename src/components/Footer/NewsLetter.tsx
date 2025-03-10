@@ -13,8 +13,12 @@ export default function NewsLetter() {
         </p>
       </div>
 
-      <div className="input">
-        <input type="text" placeholder="Your e-mail address" />
+      <div>
+        <input
+          className="input"
+          type="text"
+          placeholder="Your e-mail address"
+        />
       </div>
 
       <div>

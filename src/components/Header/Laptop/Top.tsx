@@ -25,10 +25,14 @@ const Top: React.FC<TopProps> = ({ top }) => {
   return (
     <div>
       <div className="navDrop" onClick={handleDrop}>
-        <p className={isDropped ? "active country" : "country"}>
+        <div className={isDropped ? "active country" : "country"}>
           {top.title}: {selectedOption}
-          {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
-        </p>
+          {isDropped ? (
+            <FaAngleUp className="countryAngle" />
+          ) : (
+            <FaAngleDown className="countryAngle" />
+          )}{" "}
+        </div>
       </div>
 
       {isDropped && (
