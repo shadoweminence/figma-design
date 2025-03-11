@@ -639,6 +639,7 @@ h3 {
     width: 20vw;
     height: 7vh;
     color: #1071ff;
+    padding-right: 5vw;
   }
   .showBig {
     max-width: 10vw;

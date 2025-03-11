@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
+import { setLocalCart, getLocalCart } from "../LocalStorageUtils";
 interface Cart {
   id: number;
   productId: number;
@@ -13,7 +13,7 @@ interface CartState {
 }
 
 const initialState: CartState = {
-  items: [],
+  items: getLocalCart(),
 };
 
 export const cartSlice = createSlice({
@@ -31,6 +31,7 @@ export const cartSlice = createSlice({
         price: action.payload.price,
       };
       state.items.push(newCartItem);
+      setLocalCart(state.items);
     },
   },
 });

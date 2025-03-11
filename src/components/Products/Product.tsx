@@ -1,14 +1,15 @@
 import React from "react";
 import compare from "../../assets/compare.png";
-import { FaRegStar } from "react-icons/fa";
+
 import { MdOutlineShare } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 import { FaAngleDown, FaExclamationCircle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-
+import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 import "../../css/Products/product.css";
 import { addItems } from "../../redux/cart/cartSlice";
 import { RootState } from "../../redux/store";
+import { addFavItems, deleteItems } from "../../redux/cart/favSlice";
 
 // Define the expected props for the component
 interface Product {
@@ -32,6 +33,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
   const dispatch = useDispatch();
 
   const items = useSelector((state: RootState) => state.cart.items);
+  const favItems = useSelector((state: RootState) => state.fav.items);
 
   const handleCart = () => {
     dispatch(
@@ -42,11 +44,31 @@ const Product: React.FC<ProductProps> = ({ product }) => {
       })
     );
   };
+  const handleFav = () => {
+    dispatch(
+      addFavItems({
+        productId: product.productId,
+        name: product.name,
+        price: product.price,
+      })
+    );
+  };
+  const removeFav = (id: number) => {
+    dispatch(deleteItems(id));
+  };
   return (
     <div className="productCard">
       <div className="product1">
         <img className="productImage" src={product.image} alt={product.alt} />
-        <FaRegStar className="star" />
+
+        {favItems.some((item) => item.productId === product.productId) ? (
+          <IoIosStar
+            onClick={() => removeFav(product.productId)}
+            className="star"
+          />
+        ) : (
+          <IoIosStarOutline onClick={() => handleFav()} className="star" />
+        )}
         <MdOutlineShare className="share" />
         <div className="stock">
           {product.stock ? (
@@ -90,19 +112,26 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             <FaAngleDown className="icon" />
           </div>
         </div>
+        {items.some((item) => item.productId === product.productId) ? (
+          <>
+            <div>
+              <button className="addCart" onClick={() => handleCart()}>
+                Update Cart &nbsp; <FaAngleDown className="down" />{" "}
+              </button>
+            </div>
 
-        <div>
-          <button className="addCart" onClick={() => handleCart()}>
-            Add to cart &nbsp; <FaAngleDown className="down" />{" "}
-          </button>
-        </div>
-
-        {items.some((item) => item.productId === product.productId) && (
+            <div>
+              <p className="cartAdded">
+                <TiTick className="tick" />
+                Added to Cart
+              </p>
+            </div>
+          </>
+        ) : (
           <div>
-            <p className="cartAdded">
-              <TiTick className="tick" />
-              Added to Cart
-            </p>
+            <button className="addCart" onClick={() => handleCart()}>
+              Add to cart &nbsp; <FaAngleDown className="down" />{" "}
+            </button>
           </div>
         )}
       </div>

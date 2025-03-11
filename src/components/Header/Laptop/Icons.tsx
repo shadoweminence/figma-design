@@ -8,6 +8,7 @@ import { RootState } from "../../../redux/store";
 
 const Icons = () => {
   const cart = useSelector((state: RootState) => state.cart);
+  const favItems = useSelector((state: RootState) => state.fav);
   return (
     <div>
       <div className="optionsGrid">
@@ -19,7 +20,7 @@ const Icons = () => {
         <div>
           <FaRegStar className="navStar" />
           <p className="topics">FAVORITES</p>
-          <span className="starValue">7</span>
+          <span className="starValue">{favItems.items.length}</span>
         </div>
         <div>
           <MdOutlineShoppingCart className="navCart" />
