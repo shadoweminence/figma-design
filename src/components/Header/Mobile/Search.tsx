@@ -10,15 +10,19 @@ export default function Search() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    if (searchTerm.trim() === "") {
-      setFilteredProducts([]); // Reset when input is empty
-    } else {
-      setFilteredProducts(
-        products.filter((product) =>
-          product.name.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      );
-    }
+    const delay = 300;
+    const getData = setTimeout(() => {
+      if (searchTerm.trim() === "") {
+        setFilteredProducts([]);
+      } else {
+        setFilteredProducts(
+          products.filter((product) =>
+            product.name.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        );
+      }
+    }, delay);
+    return () => clearTimeout(getData);
   }, [searchTerm]);
   return (
     <div className="search-container">
@@ -35,7 +39,7 @@ export default function Search() {
           placeholder="Search by product or SKU"
         />
         {searchTerm.trim() !== "" && (
-          <div className="searchResults">
+          <div className="mobSearchResults">
             {filteredProducts.length > 0 ? (
               <ul>
                 {filteredProducts.map((product) => (

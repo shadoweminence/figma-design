@@ -10,23 +10,7 @@ import "../../css/Products/product.css";
 import { addItems } from "../../redux/cart/cartSlice";
 import { RootState } from "../../redux/store";
 import { addFavItems, deleteItems } from "../../redux/cart/favSlice";
-
-// Define the expected props for the component
-interface Product {
-  productId: number;
-  image: string;
-  alt?: string;
-  discount: number; // Discount percentage
-  name: string; // Product name
-  price: number; // New price
-  oldPrice: number; // Old price
-  description: string; // Description
-  description1: string;
-  stock: boolean;
-}
-interface ProductProps {
-  product: Product;
-}
+import { ProductProps } from "../../Utils/Interface";
 
 // Accept props using the defined interface
 const Product: React.FC<ProductProps> = ({ product }) => {
@@ -115,7 +99,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         {items.some((item) => item.productId === product.productId) ? (
           <>
             <div>
-              <button className="addCart" onClick={() => handleCart()}>
+              <button className="addCart">
                 Update Cart &nbsp; <FaAngleDown className="down" />{" "}
               </button>
             </div>

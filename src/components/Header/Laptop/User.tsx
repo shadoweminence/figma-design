@@ -58,7 +58,11 @@ const User: React.FC<UserProps> = ({ user }) => {
               {" "}
               {user.name} {user.surname}
             </div>
-            {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
+            {isDropped ? (
+              <FaAngleUp className="userDrop" />
+            ) : (
+              <FaAngleDown className="userDrop" />
+            )}{" "}
           </div>
         </div>
 

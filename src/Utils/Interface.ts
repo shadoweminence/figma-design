@@ -39,6 +39,7 @@ export interface Product {
   description: string;
   description1: string;
   stock: boolean;
+  category: string;
 }
 export interface ProductProps {
   product: Product;

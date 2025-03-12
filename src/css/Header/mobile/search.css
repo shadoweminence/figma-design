@@ -10,13 +10,18 @@
 .search-icon {
   position: absolute;
   left: 8vw;
-
+  top: 4vh;
+  z-index: 1000;
   font-size: 1.3rem;
   color: rgba(34, 81, 236, 0.904);
 }
-
+.mobSearchResults {
+  background-color: white;
+  width: 90vw;
+  padding: 0.1vh 2vw;
+}
 .mobileSearchInput {
-  width: 100%;
+  width: 90vw;
   padding: 2vh 12vw;
   border: 0.1rem solid white;
   border-radius: 5px;

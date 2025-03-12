@@ -23,7 +23,6 @@
 .searchResults {
   position: absolute;
   top: 60%;
-
   width: 40vw;
   font-size: 1.2rem;
   background: white;
@@ -31,6 +30,7 @@
   padding: 10px;
   border-radius: 5px;
   z-index: 1000;
+  cursor: pointer;
 }
 input {
   width: 100%;
@@ -45,6 +45,7 @@ input {
   left: 0.2vw;
   font-size: 1.9rem;
   color: #1071ff;
+  z-index: 1000;
 }
 .quickOrder {
   background-color: #1071ff;
@@ -70,7 +71,7 @@ input {
   display: flex;
   margin-left: -3vw;
 
-  gap: 28vw;
+  gap: 20vw;
 
   position: relative;
   background-color: #f6f8fb;
@@ -79,16 +80,23 @@ input {
 .country {
   font-size: 0.8vw;
 }
-
+.serviceTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
 .navTitles {
   margin-left: 4vw;
   display: flex;
   gap: 1vw;
+  margin-top: 0.6vh;
+  cursor: pointer;
 }
 .navNoOptions {
   margin-top: 1vh;
   font-weight: bold;
   font-size: 1vw;
+  cursor: pointer;
 }
 
 .navDrop {
@@ -138,6 +146,7 @@ input {
   position: relative;
   margin-left: 2vw;
   color: #1071ff;
+  cursor: pointer;
 }
 .topics {
   position: absolute;
@@ -145,6 +154,7 @@ input {
   top: 4.2vh;
   color: #1071ff;
   display: flex;
+  cursor: pointer;
 
   align-items: center;
   justify-content: center;
@@ -157,6 +167,7 @@ input {
 }
 
 .topicss {
+  cursor: pointer;
   font-size: 0.6vw;
   color: #1071ff;
   display: flex;
@@ -177,7 +188,7 @@ input {
   font-size: 0.6vw;
   align-self: center;
   font-weight: bold;
-  top: -5vh;
+  top: -4vh;
 }
 
 .starValue {
@@ -204,6 +215,25 @@ input {
   font-size: 0.6vw;
   font-weight: bold;
   align-self: center;
+}
+.toggledFav {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 6vh;
+  right: 7vw;
+  width: 17vw;
+  background: white;
+  cursor: pointer;
+}
+.toggledCart {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 6vh;
+  right: 0;
+  background: white;
+  cursor: pointer;
 }
 
 ul {
@@ -240,6 +270,9 @@ ul {
 .userTitles {
   display: flex;
   gap: 1.5vw;
+}
+.userDrop {
+  margin-top: 0.6vh;
 }
 .userMessageAlign {
   display: flex;
@@ -288,7 +321,7 @@ ul {
 }
 .messageValue {
   position: absolute;
-  top: 0vh;
+  top: 0.5vh;
   color: white;
   padding: 0.1rem 0.2rem;
   border-radius: 50%;

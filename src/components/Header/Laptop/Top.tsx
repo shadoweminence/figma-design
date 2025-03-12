@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 interface Top {
@@ -11,6 +11,7 @@ interface TopProps {
 }
 
 const Top: React.FC<TopProps> = ({ top }) => {
+  const toggleRef = useRef<HTMLDivElement>(null);
   const [isDropped, setIsDropped] = useState(false);
   const [selectedOption, setSelectedOption] = useState(top.dropOptions[0]);
 
@@ -22,8 +23,25 @@ const Top: React.FC<TopProps> = ({ top }) => {
     setSelectedOption(option);
     setIsDropped(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        toggleRef.current &&
+        !toggleRef.current?.contains(event.target as Node)
+      ) {
+        event.preventDefault();
+        event.stopPropagation();
+        setIsDropped(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
   return (
-    <div>
+    <div ref={toggleRef}>
       <div className="navDrop" onClick={handleDrop}>
         <div className={isDropped ? "active country" : "country"}>
           {top.title}: {selectedOption}
