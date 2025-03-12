@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-
 import { IoSearch } from "react-icons/io5";
-import "../../../css/Header/mobile/search.css";
+import companyLogo from "../../../assets/logotype.png";
+import "../../../css/Header/laptop/nav.css";
 import { products } from "../../../Utils/Items";
 import { Product } from "../../../Utils/Interface";
 import { useNavigate } from "react-router-dom";
 
-export default function Search() {
+const MidNav: React.FC = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -15,7 +15,7 @@ export default function Search() {
     const delay = 300;
     const getData = setTimeout(() => {
       if (searchTerm.trim() === "") {
-        setFilteredProducts([]);
+        setFilteredProducts([]); // Reset when input is empty
       } else {
         setFilteredProducts(
           products.filter((product) =>
@@ -24,28 +24,34 @@ export default function Search() {
         );
       }
     }, delay);
-    return () => clearTimeout(getData);
+    return () => {
+      clearTimeout(getData);
+    };
   }, [searchTerm]);
 
   const handleRedirectSearch = (id: number) => {
     navigate(`../../Products/Product/${id}`);
   };
-  return (
-    <div className="search-container">
-      <div>
-        <IoSearch className="search-icon" />
 
-        <input
-          className="mobileSearchInput"
-          type="text"
-          value={searchTerm}
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-          }}
-          placeholder="Search by product or SKU"
-        />
+  return (
+    <nav className="headNav">
+      <div className="laptopNavLogo">
+        <img src={companyLogo} alt="logo" />
+      </div>
+      <div>
+        <div className="search-containers">
+          <IoSearch className="search-icons" />
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Search by product or SKU"
+            className="searchItem"
+          />
+        </div>
+
         {searchTerm.trim() !== "" && (
-          <div className="mobSearchResults">
+          <div className="searchResults">
             {filteredProducts.length > 0 ? (
               <ul>
                 {filteredProducts.map((product) => (
@@ -63,6 +69,12 @@ export default function Search() {
           </div>
         )}
       </div>
-    </div>
+
+      <div>
+        <button className="quickOrder">Quick Order Form</button>
+      </div>
+    </nav>
   );
-}
+};
+
+export default MidNav;

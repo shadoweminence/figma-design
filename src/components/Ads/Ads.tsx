@@ -19,6 +19,66 @@ const Ads: React.FC = () => {
       image: ad3,
       name: "New iPhone now available!",
     },
+    {
+      image: ad1,
+      name: "New tool kits!",
+    },
+    {
+      image: ad2,
+      name: "New rules for wind farms!",
+    },
+    {
+      image: ad3,
+      name: "New iPhone now available!",
+    },
+    {
+      image: ad1,
+      name: "New tool kits!",
+    },
+    {
+      image: ad2,
+      name: "New rules for wind farms!",
+    },
+    {
+      image: ad3,
+      name: "New iPhone now available!",
+    },
+    {
+      image: ad1,
+      name: "New tool kits!",
+    },
+    {
+      image: ad2,
+      name: "New rules for wind farms!",
+    },
+    {
+      image: ad3,
+      name: "New iPhone now available!",
+    },
+    {
+      image: ad1,
+      name: "New tool kits!",
+    },
+    {
+      image: ad2,
+      name: "New rules for wind farms!",
+    },
+    {
+      image: ad3,
+      name: "New iPhone now available!",
+    },
+    {
+      image: ad1,
+      name: "New tool kits!",
+    },
+    {
+      image: ad2,
+      name: "New rules for wind farms!",
+    },
+    {
+      image: ad3,
+      name: "New iPhone now available!",
+    },
   ];
 
   return (

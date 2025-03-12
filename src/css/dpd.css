@@ -121,7 +121,7 @@
     font-family: "BasierSquare";
   }
   .dpdH2 {
-    font-size: 2.6vw;
+    font-size: 2.2vw;
     text-align: left;
 
     color: black;
@@ -131,7 +131,7 @@
   .dpd p {
     margin-left: 1vw;
     font-size: 1vw;
-    width: 25vw;
+    width: 28vw;
   }
   .showBtn {
     margin: 1vw;
@@ -139,7 +139,7 @@
     color: white;
     font-size: 1vw;
     font-weight: bold;
-    padding: 2.5vh 2.5vw;
+    padding: 1.5vh 2vw;
     border-radius: 3rem;
     border: #1071ff;
   }

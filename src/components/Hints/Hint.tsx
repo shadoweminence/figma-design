@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/hints.css";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -15,6 +15,7 @@ interface HintProps {
 }
 
 const Hint: React.FC<HintProps> = ({ hint }) => {
+  const [readAll, setReadAll] = useState<boolean>(false);
   return (
     <div className="hints">
       <div>
@@ -23,9 +24,11 @@ const Hint: React.FC<HintProps> = ({ hint }) => {
         </div>
 
         <div className="hintName">{hint.name}</div>
-        <div className="hintDescription">{hint.description}</div>
+        <div className={readAll ? "hintDescription1" : "hintDescription"}>
+          {hint.description}
+        </div>
         <div>
-          <div className="moreHints">
+          <div className="moreHints" onClick={() => setReadAll(!readAll)}>
             <p>Read More</p>
             <FiArrowRight className="expandHint" />
           </div>

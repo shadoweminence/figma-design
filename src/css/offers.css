@@ -75,7 +75,7 @@
     font-size: 2rem;
     color: white;
     font-weight: bold;
-    gap: 1.2rem;
+    gap: 1.4rem;
 
     position: relative;
   }
@@ -95,11 +95,11 @@
   }
 
   .discount {
-    font-size: 7vw;
+    font-size: 6vw;
     margin-left: 1vw;
   }
   .offerName {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-left: 1.5vw;
   }
 
@@ -110,9 +110,9 @@
     padding: 2vh 2.5vw;
     border: none;
     display: flex;
-    font-weight: bold;
+    font-weight: 600;
     margin-left: 18vw;
 
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }

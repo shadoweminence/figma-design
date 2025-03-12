@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp, FaRegUserCircle } from "react-icons/fa";
 import { MdOutlinePhoneEnabled, MdMailOutline } from "react-icons/md";
+import { formatPhoneNumber } from "../../../Utils/HelperFucntion";
 
 interface User {
   name: string;
@@ -25,13 +26,7 @@ const User: React.FC<UserProps> = ({ user }) => {
     <div className="userTitles">
       <div className="number ">
         <MdOutlinePhoneEnabled className="numberIcon" />
-        <div className="numberSize">
-          {user.phone.replace(
-            /(\+\d{2})\((\d)\)(\d+)/,
-            (_, countryCode, zero, num) =>
-              `${countryCode} (${zero}) ${num.replace(/\d{2}(?=\d)/g, "$& ")}`
-          )}
-        </div>
+        <div className="numberSize">{formatPhoneNumber(user.phone)}</div>
       </div>
 
       <p className="distributer">|</p>
@@ -58,7 +53,11 @@ const User: React.FC<UserProps> = ({ user }) => {
               {" "}
               {user.name} {user.surname}
             </div>
-            {isDropped ? <FaAngleUp /> : <FaAngleDown />}{" "}
+            {isDropped ? (
+              <FaAngleUp className="userDrop" />
+            ) : (
+              <FaAngleDown className="userDrop" />
+            )}{" "}
           </div>
         </div>
 

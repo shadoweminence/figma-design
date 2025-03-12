@@ -35,6 +35,7 @@
   font-weight: bold;
   color: #1071ff;
   gap: 0.2rem;
+  cursor: pointer;
 }
 .hintImg {
   display: flex;
@@ -80,7 +81,6 @@
     grid-template-columns: repeat(4, 21vw);
     margin-bottom: 1vh;
     gap: 2vw;
-    margin-top: 2vh;
   }
   .hintName {
     margin-top: 0.5rem;
@@ -93,12 +93,20 @@
   }
   .hintDescription {
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.3vw;
+    font-size: 1vw;
+    color: black;
+    padding-left: 0.5vw;
+    padding-right: 1.5vw;
+  }
+  .hintDescription1 {
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 1vw;
     color: black;
     padding-left: 0.5vw;
     padding-right: 1.5vw;
@@ -120,7 +128,7 @@
     display: flex;
     justify-content: right;
     align-items: right;
-    gap: 64vw;
+    gap: 63vw;
     max-width: 87vw;
   }
   .expandHint {
@@ -136,5 +144,6 @@
     gap: 0.2rem;
     padding-left: 0.5vw;
     padding-right: 1.5vw;
+    cursor: pointer;
   }
 }

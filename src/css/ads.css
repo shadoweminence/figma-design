@@ -99,15 +99,18 @@
     border-radius: 20rem;
   }
 
+  .adH2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+  }
   .adName {
     background-color: #ff7e27;
     height: 100%;
     max-width: 14vw;
-
-    font-size: 1.4vw;
+    font-size: 1rem;
     color: white;
-    padding-left: 1vw;
-    padding-right: 3vw;
+    padding-left: 0vw;
+    padding-right: 2vw;
     border-top-left-radius: 0.6rem;
     border-bottom-left-radius: 0.6rem;
   }
@@ -121,7 +124,7 @@
 
   .adImg img {
     width: 14vw;
-    height: 40vh;
+    height: 30vh;
     object-fit: cover;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;

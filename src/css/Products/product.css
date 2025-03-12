@@ -4,6 +4,7 @@
   margin-left: 3vw;
   width: 45vw;
   line-height: 1.2;
+  height: 60vh;
 }
 h2 {
   text-align: center;
@@ -104,7 +105,7 @@ button:hover {
   padding: 0.1rem;
   font-weight: normal;
   margin-bottom: 0.1rem;
-  margin-left: 0.1rem;
+  margin-left: 1vw;
 }
 .noStock {
   color: red;
@@ -113,7 +114,7 @@ button:hover {
   display: flex;
   padding: 0.1rem;
   margin-bottom: 0.1rem;
-  margin-left: 0.1rem;
+  margin-left: 1vw;
 }
 .tick {
   border-radius: 1rem;
@@ -131,6 +132,7 @@ button:hover {
   text-align: left;
   font-size: 0.8rem;
   font-weight: bold;
+  margin-left: 1vw;
 }
 .dollars {
   font-size: 1.4rem;
@@ -145,14 +147,17 @@ button:hover {
 
 .quantity {
   display: flex;
+  margin-left: 1vw;
+  height: 6vh;
 }
 .btn {
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: white;
   border: 0.1rem solid rgb(221, 218, 218);
   border-radius: 0.5rem;
   margin: 0.1rem;
+  width: 15vw;
 }
 .select-container {
   margin-left: 1vw;
@@ -196,17 +201,19 @@ button:hover {
 
 .name {
   margin-top: 0;
+  margin-left: 1vw;
   color: black;
-  min-height: 5vh;
-  font-size: 0.8rem;
+  min-height: 7vh;
+  font-size: 1rem;
   font-family: "BasierCircle";
+  padding: 0;
 }
 
 .description {
-  padding-left: 2vw;
+  padding-left: 1vw;
   color: gray;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 h3 {
@@ -232,7 +239,8 @@ h3 {
   background-color: #e6effb;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  padding-left: 5vw;
+  padding: 2vh 2vw;
+  padding-left: 6vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,7 +274,7 @@ h3 {
 
   .name {
     color: black;
-    min-height: 7rem;
+    min-height: 10rem;
     font-size: 1.5rem;
   }
 
@@ -406,6 +414,7 @@ h3 {
     margin-top: 0.5rem;
     padding-left: 2vw;
     font-family: "BasierSquare";
+    font-weight: 400;
   }
 
   .cartAdded {
@@ -429,6 +438,7 @@ h3 {
   .productCard {
     margin-top: 2vh;
     width: 20vw;
+    height: 94vh;
   }
 
   .product1 {
@@ -439,12 +449,9 @@ h3 {
     padding: 1vw;
   }
 
-  .rec {
-    position: relative;
-  }
   .leftButtonContainer {
     position: absolute;
-    bottom: 60vh;
+    bottom: 50vh;
     left: -1%;
 
     padding: 0 0.5vw;
@@ -454,7 +461,7 @@ h3 {
   }
   .rightButtonContainer {
     position: absolute;
-    bottom: 60vh;
+    bottom: 50vh;
     right: 4%;
 
     padding: 0 0.5vw;
@@ -466,6 +473,7 @@ h3 {
   .productImage {
     height: 35vh;
     width: 20vw;
+    position: relative;
   }
 
   .badge1 {
@@ -487,7 +495,7 @@ h3 {
     padding: 0.4rem 0.2rem;
     border-radius: 50%;
     background-color: #e6effb;
-    font-size: 1.5vw;
+    font-size: 1.9vw;
   }
 
   .compare {
@@ -618,7 +626,7 @@ h3 {
 
   .name {
     margin-top: 1vh;
-    font-size: 1.4vw;
+    font-size: 1.1vw;
     color: black;
     padding: 0vh 0vw;
     font-weight: bolder;
@@ -639,7 +647,7 @@ h3 {
     text-align: left;
     font-size: 1vw;
     line-height: 1.8;
-    font-weight: bold;
+    font-weight: 400;
     padding-left: 0;
     font-family: "BasierSquare";
   }

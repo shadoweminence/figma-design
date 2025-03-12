@@ -33,6 +33,26 @@ const Categories: React.FC = () => {
       alt: "Ventilator",
       name: "Ventilation and Heating",
     },
+    {
+      image: solar,
+      alt: "Solar panel",
+      name: "Photovoltaics",
+    },
+    {
+      image: phone,
+      alt: "Mobile phone",
+      name: "Electronics",
+    },
+    {
+      image: bulb,
+      alt: "Bulb",
+      name: "Light Sources",
+    },
+    {
+      image: fan,
+      alt: "Ventilator",
+      name: "Ventilation and Heating",
+    },
   ];
 
   return (
