@@ -1,17 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { IoSearch } from "react-icons/io5";
 import "../../../css/Header/mobile/search.css";
+import { products } from "../../../Utils/Items";
+import { Product } from "../../../Utils/Interface";
 
 export default function Search() {
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    if (searchTerm.trim() === "") {
+      setFilteredProducts([]); // Reset when input is empty
+    } else {
+      setFilteredProducts(
+        products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      );
+    }
+  }, [searchTerm]);
   return (
     <div className="search-container">
-      <IoSearch className="search-icon" />
-      <input
-        className="mobileSearchInput"
-        type="text"
-        placeholder="Search by product or SKU"
-      />
+      <div>
+        <IoSearch className="search-icon" />
+
+        <input
+          className="mobileSearchInput"
+          type="text"
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
+          placeholder="Search by product or SKU"
+        />
+        {searchTerm.trim() !== "" && (
+          <div className="searchResults">
+            {filteredProducts.length > 0 ? (
+              <ul>
+                {filteredProducts.map((product) => (
+                  <li key={product.productId}>
+                    <div>{product.name}</div>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>No products found</p>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

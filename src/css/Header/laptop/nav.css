@@ -21,8 +21,16 @@
   border-radius: 0.5rem;
 }
 .searchResults {
-  position: relative;
-  top: 2vh;
+  position: absolute;
+  top: 60%;
+
+  width: 40vw;
+  font-size: 1.2rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
 }
 input {
   width: 100%;

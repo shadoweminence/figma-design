@@ -38,20 +38,23 @@ const MidNav: React.FC = () => {
           />
         </div>
 
-        <div className="searchResults">
-          {filteredProducts.length > 0 ? (
-            <ul>
-              {filteredProducts.map((product) => (
-                <li key={product.productId}>
-                  <div>{product.name}</div>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No products found</p>
-          )}
-        </div>
+        {searchTerm.trim() !== "" && (
+          <div className="searchResults">
+            {filteredProducts.length > 0 ? (
+              <ul>
+                {filteredProducts.map((product) => (
+                  <li key={product.productId}>
+                    <div>{product.name}</div>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>No products found</p>
+            )}
+          </div>
+        )}
       </div>
+
       <div>
         <button className="quickOrder">Quick Order Form</button>
       </div>
