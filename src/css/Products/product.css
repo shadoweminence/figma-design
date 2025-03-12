@@ -22,7 +22,16 @@ h2 {
   position: relative;
   margin-top: -3vh;
 }
-.button-container {
+.leftButtonContainer {
+  position: absolute;
+  bottom: 5vh;
+  left: 5%;
+  background-color: #e6effb;
+  padding: 0 1vw;
+  padding-top: 0.5vh;
+  font-size: 2rem;
+}
+.rightButtonContainer {
   position: absolute;
   bottom: 5vh;
   right: 5%;
@@ -378,7 +387,13 @@ h3 {
     position: relative;
     margin-top: -3vh;
   }
-  .button-container {
+  .leftButtonContainer {
+    position: absolute;
+    bottom: 5vh;
+    left: 5%;
+  }
+
+  .rightButtonContainer {
     position: absolute;
     bottom: 5vh;
     right: 5%;
@@ -427,10 +442,20 @@ h3 {
   .rec {
     position: relative;
   }
-  .button-container {
+  .leftButtonContainer {
     position: absolute;
-    bottom: 42vh;
-    right: 8%;
+    bottom: 60vh;
+    left: -1%;
+
+    padding: 0 0.5vw;
+    padding-top: 1vh;
+    font-size: 2rem;
+    background-color: #e6effb;
+  }
+  .rightButtonContainer {
+    position: absolute;
+    bottom: 60vh;
+    right: 4%;
 
     padding: 0 0.5vw;
     padding-top: 1vh;

@@ -20,9 +20,13 @@
   border: 0.1rem solid rgb(235, 235, 235);
   border-radius: 0.5rem;
 }
+.searchResults {
+  position: relative;
+  top: 2vh;
+}
 input {
   width: 100%;
-  padding: 2vh 3vw;
+  padding: 2vh 1vw;
   border: 0.1rem solid white;
   border-radius: 5px;
   position: relative;
@@ -65,7 +69,7 @@ input {
   padding: 1.5rem;
 }
 .country {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .navTitles {
@@ -102,7 +106,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1.2vw;
+  max-width: 0.8vw;
   height: auto;
   min-height: 1vh;
   object-fit: contain; /* Ensures the image scales properly */
@@ -156,7 +160,7 @@ input {
 }
 
 .compareValue {
-  margin-left: 3.8vw;
+  margin-left: 3.2vw;
   color: white;
   position: relative;
   padding: 0.2rem 0.4rem;
@@ -165,7 +169,7 @@ input {
   font-size: 0.6vw;
   align-self: center;
   font-weight: bold;
-  top: -3vh;
+  top: -5vh;
 }
 
 .starValue {
@@ -267,7 +271,7 @@ ul {
   display: flex;
   gap: 0.5vw;
 
-  font-size: 1.1vw;
+  font-size: 0.8vw;
 }
 
 .user {
