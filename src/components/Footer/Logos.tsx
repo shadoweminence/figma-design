@@ -2,6 +2,7 @@ import React from "react";
 import { FaYoutube } from "react-icons/fa";
 import { BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import logo from "../../assets/logotype.png";
+import { MdCopyright } from "react-icons/md";
 import "../../css/Footer/logos.css";
 
 const Logos = () => {
@@ -20,7 +21,7 @@ const Logos = () => {
       </div>
 
       <div className="copyright">
-        <span className="copy">&#169;</span>
+        <MdCopyright className="copy" />
         2021 Divante S.A.
       </div>
     </div>

@@ -117,6 +117,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(4, 21vw);
     margin-bottom: 5vh;
+    margin-top: 0;
     gap: 2vw;
   }
 
@@ -135,7 +136,7 @@ h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 1.1vw;
+    font-size: 1.3rem;
     color: black;
     margin-bottom: 0.5rem;
   }
@@ -147,8 +148,8 @@ h3 {
     object-fit: contain; /* Ensures the image scales properly */
   }
   h3 {
-    font-size: 1.5vw;
-    min-height: 12vh;
+    font-size: 1.4rem;
+    min-height: 9vh;
     padding-left: 0.5vw;
     padding-right: 1vw;
   }

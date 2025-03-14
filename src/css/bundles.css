@@ -26,13 +26,12 @@
   font-size: 1.2rem;
 }
 .buyBundle {
-  display: flex;
-  justify-self: center;
-  padding: 0.8rem;
-  border-radius: 1rem;
+  padding: 2vh 7vw;
+  border-radius: 3rem;
   color: #1071ff;
   border: #1071ff;
   font-size: 1rem;
+  margin-left: 18vw;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -130,7 +129,7 @@
 
   .bundleImg img {
     width: 45vw;
-    height: 50vh;
+    height: 47vh;
     margin-left: 1.5vw;
     object-fit: cover;
     border-radius: 1rem;
@@ -138,7 +137,7 @@
 
   .bundleDetails {
     background-color: #1071ff;
-    font-size: 3rem;
+
     color: white;
     padding: 4rem;
     border-radius: 10px;
@@ -155,12 +154,13 @@
     display: flex;
     justify-self: left;
     margin-top: 3vh;
-    margin-left: 1.3vw;
+    margin-left: -3vw;
   }
   .bundleDescription1 {
-    margin-left: 1.5vw;
-    font-size: 2vw;
+    margin-left: 1.2vw;
+    font-size: 1.3vw;
     max-width: 33vw;
+    padding-right: 10vw;
   }
   .buyBundle {
     display: flex;
@@ -169,10 +169,10 @@
     border-radius: 3rem;
     color: #1071ff;
     border: #1071ff;
-    font-size: 1.7vw;
-    font-weight: bold;
-    margin-top: 2rem;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: 4vh;
     margin-bottom: 2rem;
-    margin-left: 3rem;
+    margin-left: 1.2vw;
   }
 }

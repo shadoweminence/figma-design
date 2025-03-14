@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import "../../../css/Header/laptop/nav.css";
 
 interface Top {
   title: string;
@@ -30,8 +31,7 @@ const Top: React.FC<TopProps> = ({ top }) => {
         toggleRef.current &&
         !toggleRef.current?.contains(event.target as Node)
       ) {
-        event.preventDefault();
-        event.stopPropagation();
+
         setIsDropped(false);
       }
     };

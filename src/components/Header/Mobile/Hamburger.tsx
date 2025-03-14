@@ -5,6 +5,7 @@ import "../../../css/Header/mobile/nav.css";
 import companyLogo from "../../../assets/logotype.png";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 interface NavOption {
   title: string;
@@ -30,11 +31,12 @@ const Hamburger: React.FC<HamburgerProps> = ({ navs }) => {
       {/* Left Section */}
       <div className="nav-left">
         <div className="ham">
-          <RxHamburgerMenu onClick={() => setIsHamDropped(!isHamDropped)} />
+          <RxHamburgerMenu onClick={() => setIsHamDropped(true)} />
         </div>
 
         {isHamDropped && (
           <div className="dropdownNav">
+            <RxCross2 onClick={() => setIsHamDropped(false)} />
             {navs.map((nav, index) => (
               <div key={index}>
                 <div
@@ -67,7 +69,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ navs }) => {
                 </div>
 
                 {openDropdown === index && nav.options && (
-                  <ul className="options-list">
+                  <ul className="optionsList">
                     {nav.options.map((option, i) => (
                       <li
                         key={i}

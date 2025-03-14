@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import companyLogo from "../../../assets/logotype.png";
+import "../../../css/Header/laptop/nav.css";
 import { products } from "../../../Utils/Items";
 import { Product } from "../../../Utils/Interface";
-import "../../../css/Header/laptop/nav.css";
-
 import { useNavigate } from "react-router-dom";
 
 const MidNav: React.FC = () => {

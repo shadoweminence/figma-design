@@ -4,8 +4,10 @@ import { IoSearch } from "react-icons/io5";
 import "../../../css/Header/mobile/search.css";
 import { products } from "../../../Utils/Items";
 import { Product } from "../../../Utils/Interface";
+import { useNavigate } from "react-router-dom";
 
 export default function Search() {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
@@ -24,6 +26,10 @@ export default function Search() {
     }, delay);
     return () => clearTimeout(getData);
   }, [searchTerm]);
+
+  const handleRedirectSearch = (id: number) => {
+    navigate(`../../Products/Product/${id}`);
+  };
   return (
     <div className="search-container">
       <div>
@@ -43,7 +49,10 @@ export default function Search() {
             {filteredProducts.length > 0 ? (
               <ul>
                 {filteredProducts.map((product) => (
-                  <li key={product.productId}>
+                  <li
+                    key={product.productId}
+                    onClick={() => handleRedirectSearch(product.productId)}
+                  >
                     <div>{product.name}</div>
                   </li>
                 ))}

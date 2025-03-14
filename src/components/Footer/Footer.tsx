@@ -20,10 +20,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
-        <div className="logo">
-          <Logos />
-        </div>
+      <div className="logo">
+        <Logos />
       </div>
     </div>
   );

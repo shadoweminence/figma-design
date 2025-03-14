@@ -94,15 +94,18 @@
     margin-top: 2vh;
     padding-left: 5vw;
     margin-bottom: 6vh;
+    margin-left: -1vw;
   }
   .copy {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     color: black;
-    margin-right: 0.5vw;
+    position: relative;
+    top: 1vh;
+    color: grey;
+    margin-right: 3px;
   }
   .logo1 {
     order: 3;
-    padding-right: 6vw;
   }
   .logo1 img {
     margin-top: -1vh;

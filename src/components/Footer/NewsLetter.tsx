@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/Footer/newsletter.css";
 
 export default function NewsLetter() {
+  const [inputValue, setInputValue] = useState("");
   return (
     <div className="signUp">
       <h3 className="newsletterH3">Sign up for news</h3>
@@ -15,8 +16,10 @@ export default function NewsLetter() {
 
       <div>
         <input
-          className="input"
           type="text"
+          className="input"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
           placeholder="Your e-mail address"
         />
       </div>

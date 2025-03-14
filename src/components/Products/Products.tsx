@@ -6,11 +6,13 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import ShowAll from "./ShowAllProducts";
 import Product from "./Product";
 import useScreenSize from "../hooks/useScreenSize";
+import "../../css/Products/product.css";
 
 const Products: React.FC = () => {
   const isLaptop = useScreenSize();
 
   const [startIndex, setStartIndex] = useState(0);
+
   const productsPerPage = isLaptop ? 4 : 2; // Number of products to show at a time
 
   const handleNext = () => {
