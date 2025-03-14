@@ -4,6 +4,7 @@ import companyLogo from "../../../assets/logotype.png";
 import { products } from "../../../Utils/Items";
 import { Product } from "../../../Utils/Interface";
 import "../../../css/Header/laptop/nav.css";
+
 import { useNavigate } from "react-router-dom";
 
 const MidNav: React.FC = () => {

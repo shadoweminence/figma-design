@@ -78,6 +78,7 @@
   cursor: pointer;
 }
 .serviceTitle {
+
   font-size: 1vw;
 
   cursor: pointer;
@@ -85,7 +86,9 @@
 .navTitles {
   margin-left: 4vw;
   display: flex;
+
   gap: 3vw;
+
   margin-top: 0.6vh;
   cursor: pointer;
 }

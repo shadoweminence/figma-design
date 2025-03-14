@@ -61,7 +61,9 @@ export const products = [
     image: product1,
     alt: "handle omnires",
     discount: 30,
+
     name: "Connection with a handle Omnires round ",
+
     price: 45.0,
     oldPrice: 55.0,
     description: "Omnires | Part No. 2123532",
@@ -74,7 +76,9 @@ export const products = [
     image: product2,
     alt: "image2",
     discount: 30,
+
     name: "Countertop washbasin GoodHome Tekapo ",
+
     price: 51.0,
     oldPrice: 64.0,
     description: "Omnires | Part No. 2123532",
@@ -87,7 +91,9 @@ export const products = [
     image: product3,
     alt: "image3",
     discount: 30,
+
     name: "Perforated Simpson tape 25 x 2500 x 2 mm ",
+
     price: 51.0,
     oldPrice: 64.0,
     description: "GoodHome | Part No. 234565",
@@ -100,6 +106,7 @@ export const products = [
     image: product4,
     alt: "image4",
     discount: 30,
+
     name: "AMBER DECOR Bulb 60W, E27 590 ",
     price: 51.0,
     oldPrice: 64.0,
@@ -205,6 +212,7 @@ export const products = [
     alt: "image4",
     discount: 30,
     name: "AMBER DECOR Bulb 60W, E27 590 ",
+
     price: 51.0,
     oldPrice: 64.0,
     description: "GoodHome | Part No. 234565",

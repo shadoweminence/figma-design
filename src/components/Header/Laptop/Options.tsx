@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "../../../css/Header/laptop/nav.css";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { makeUpperCase } from "../../../Utils/HelperFucntion";
+
 import { removeWhiteSpace } from "../../../Utils/HelperFucntion";
 import { useNavigate } from "react-router-dom";
+
 
 interface NavOption {
   title: string;
@@ -14,7 +16,9 @@ interface NavOptionProps {
 }
 
 const Options: React.FC<NavOptionProps> = ({ nav }) => {
+
   const navigate = useNavigate();
+
   const toggleRef = useRef<HTMLDivElement>(null);
   const [isDropped, setIsDropped] = useState(false);
 
@@ -65,17 +69,21 @@ const Options: React.FC<NavOptionProps> = ({ nav }) => {
             <div className="navOptionsDropdown">
               <ul>
                 {nav.options.map((option, index) => (
+
                   <li onClick={() => handleTitle(option)} key={index}>
                     {option}
                   </li>
+
                 ))}
               </ul>
             </div>
           )}
         </div>
       ) : (
+
         <div className="navNoOptions serviceTitle">
           <div onClick={() => handleTitle(nav.title)}>{properTitle}</div>
+
         </div>
       )}
     </div>

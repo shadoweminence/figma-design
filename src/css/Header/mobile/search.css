@@ -11,7 +11,9 @@
   position: absolute;
   left: 8vw;
   top: 4vh;
+
   z-index: 900;
+
   font-size: 1.3rem;
   color: rgba(34, 81, 236, 0.904);
 }

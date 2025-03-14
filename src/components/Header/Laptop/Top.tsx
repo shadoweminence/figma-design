@@ -31,6 +31,7 @@ const Top: React.FC<TopProps> = ({ top }) => {
         toggleRef.current &&
         !toggleRef.current?.contains(event.target as Node)
       ) {
+
         setIsDropped(false);
       }
     };
